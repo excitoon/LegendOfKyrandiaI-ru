@@ -1,0 +1,160 @@
+# `ENTER.EMC`.
+
+strings = {
+	s_title: 'A natural mineral pool',
+	s_wonder_if_malcolm_here: 'I wonder if Malcolm is in here.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_90(0x00)
+instr_2(2, 0x00)
+push(2, 0x02)
+binary(2, 0x02)
+if cond:
+	call_23(0x01)
+
+call_40(u16(0x00ba), u16(0x0090), u16(0x00ba), u16(0x0088))
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x13, 0x73, 0x65, 0x5d)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	ifnot(1, label_131)
+	func_28()
+	call_23(0x1b)
+	return call_111(0x02, var(0x04))
+
+label label_131
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x00)
+return acc  # acc = title(u16(0x00b3), 0x00)
+
+label global_3
+instr_13(2, 0x00)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_114(0x02)
+instr_2(2, 0x00)
+if cond:
+	call_24(0x00, 0x11)
+
+else:
+	call_24(0x00, 0x03)
+
+call_4(u16(0x0092))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	speak(0xfe, 0x00, s_wonder_if_malcolm_here)
+	call_5(u16(0x0092))
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = call_5(u16(0x0092))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_90(0x00)
+instr_2(2, 0x00)
+push(2, 0x06)
+binary(2, 0x02)
+if cond:
+	call_23(0x01)
+	call_150(0x02)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

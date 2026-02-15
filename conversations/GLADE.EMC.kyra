@@ -1,0 +1,222 @@
+# `GLADE.EMC`.
+
+strings = {
+	s000: 'LEP_OUT.WSA',
+	s_finally_somebody_front_door: 'Finally, somebody has a front door.',
+	s_hey_pipsqueak: 'Hey, Pipsqueak!',
+	s_are_you_in_there: 'Are you in there?',
+	s_troublesome_little_faun_lives: 'That troublesome little Faun lives in there.',
+	s_was_that_a_pack: 'Was that a pack-rat?',
+	s_hmm: ' Hmm? ',
+	s_title: 'A natural clearing',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_143(0x21, 0x28, 0x50, u16(0x00d8))
+call_4(u16(0x00b5))
+instr_2(2, 0x00)
+if cond:
+	call_41(0x00, 0xff, 0x00, 0x00)
+	call_63(0x00, 0x00, 0x50, u16(0x00d8), 0x00)
+	call_42(0x00)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x01)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(sub(0x68, 0x52), 0x01), add(sub(u16(0x00fa), u16(0x00e0)), 0x01), 0x52, u16(0x00e0))
+instr_2(2, 0x00)
+if cond:
+	call_11(0x01, 0x01, 0x6c, u16(0x00c8))
+	instr_2(2, 0x00)
+	instr_10(2, 0x01)
+	instr_6(2, 0x01)
+	unary(2, 0x00)
+	ifnot(1, label_231)
+	call_65(0x01, 0x03, 0x07, 0x00)
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	if cond:
+		call_4(u16(0x00a4))
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_finally_somebody_front_door)
+			leave 0x01
+			return acc
+
+		call_4(u16(0x00a4))
+		instr_2(2, 0x00)
+		call_4(u16(0x00b0))
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		binary(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_hey_pipsqueak)
+			speak(0xfe, 0x00, s_are_you_in_there)
+			leave 0x01
+			return acc
+
+		else:
+			call_4(u16(0x00d4))
+			instr_2(2, 0x00)
+			if cond:
+				speak(0xfe, 0x00, s_troublesome_little_faun_lives)
+
+			else:
+				speak(0xfe, 0x00, s_was_that_a_pack)
+				call_5(u16(0x00d4))
+
+			leave 0x01
+			return acc
+
+	else:
+		speak(0xfe, 0x00, s_hmm)
+		leave 0x01
+		return acc
+
+label label_231
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x01
+return acc
+leave 0x01
+return acc
+
+label global_2
+instr_13(2, 0x02)
+title(u16(0x00b3), 0x07)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_4(u16(0x00b5))
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_6(u16(0x00b5))
+	call_24(0x01, 0x15)
+	call_33(0x02)
+	call_41(0x01, 0x00, 0x00, 0x00)
+	call_64(0x01, 0x00, 0x09, 0x50, u16(0x00d8), 0x08, 0x00)
+	call_23(0x18)
+	call_64(0x01, 0x00, 0x09, 0x50, u16(0x00d8), 0x0c, 0x09)
+	call_49(0x00)
+	call_63(0x00, 0x00, 0x50, u16(0x00d8), 0x0d)
+	call_42(0x00)
+	call(2, call_86)
+	call_137(0x70)
+	instr_2(2, 0x00)
+	instr_10(2, 0x01)
+	call_138(u16(0x0080), 0x70)
+	call_48(0x01, 0x05, 0x70, u16(0x00e0))
+	call_138(arg(0x01), 0x70)
+	call_23(0x17)
+	call(2, call_134)
+	call_4(u16(0x00ba))
+	instr_2(2, 0x00)
+	call_4(u16(0x00bb))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	binary(2, 0x00)
+	if cond:
+		push(2, 0x01)
+		instr_10(2, 0x02)
+		instr_6(2, 0x02)
+		ifnot(1, label_361)
+		call_6(u16(0x00ba))
+		call_5(u16(0x00bb))
+
+	label label_361
+	leave 0x02
+	return acc
+
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x02
+return acc
+leave 0x02
+return acc
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

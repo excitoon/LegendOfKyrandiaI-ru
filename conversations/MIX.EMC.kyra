@@ -1,0 +1,634 @@
+# `MIX.EMC`.
+
+strings = {
+	s_already_put_potion: 'I already put a potion in there.',
+	s001: 'MIXROX.WSA',
+	s_thats_impressive: 'That\'s impressive!',
+	s_seemed_do_something: 'That seemed to do something.',
+	s_theres_nothing_in_here: 'There\'s nothing in here.',
+	s_absorbed_within_crystal: 'It\'s absorbed within the crystal.',
+	s_dont_think_empty_vial: 'I don\'t think an empty vial will work here.',
+	s_nothing_happened: 'Nothing happened.',
+	s_hmm_thats_no_help: 'Hmm.  That\'s no help.',
+	s_doubt_empty_vial_work: 'I doubt an empty vial will work here.',
+	s_shape_doesnt_match_engraving: 'It\'s shape doesn\'t match the engraving.',
+	s_title: 'The Crystals of Alchemy',
+	s_hey_must_one_zanthias: 'Hey!  This must be one of Zanthia\'s toys.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+instr_13(2, 0x01)
+push(2, 0x4f)
+instr_10(2, 0x01)
+instr_7(2, 0x01)
+push(2, 0x3c)
+binary(2, 0x02)
+if cond:
+	instr_7(2, 0x02)
+	push(2, 0x3c)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x3d)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x3e)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x44)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x40)
+	binary(2, 0x02)
+	ifnot(1, label_103)
+	push(2, 0x43)
+	instr_10(2, 0x01)
+
+label label_103
+instr_7(2, 0x01)
+push(2, 0x3e)
+binary(2, 0x02)
+if cond:
+	instr_7(2, 0x02)
+	push(2, 0x3c)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x44)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x3e)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x3f)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x40)
+	binary(2, 0x02)
+	ifnot(1, label_129)
+	push(2, 0x42)
+	instr_10(2, 0x01)
+
+label label_129
+instr_7(2, 0x01)
+push(2, 0x40)
+binary(2, 0x02)
+if cond:
+	instr_7(2, 0x02)
+	push(2, 0x3c)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x43)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x3e)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x42)
+		instr_10(2, 0x01)
+
+	instr_7(2, 0x02)
+	push(2, 0x40)
+	binary(2, 0x02)
+	ifnot(1, label_155)
+	push(2, 0x41)
+	instr_10(2, 0x01)
+
+label label_155
+instr_6(2, 0x01)
+push(2, 0x4f)
+binary(2, 0x03)
+if cond:
+	call_121(0x6b, u16(0x00a5))
+	call_0(arg(0x01), 0x00)
+
+leave 0x01
+return acc
+
+label func_171
+instr_13(2, 0x09)
+func_28()
+instr_7(2, 0x01)
+push(2, 0x3c)
+binary(2, 0x02)
+instr_7(2, 0x01)
+push(2, 0x3e)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_7(2, 0x01)
+push(2, 0x40)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	speak(0xfe, 0x00, s_already_put_potion)
+	leave 0x09
+	return acc
+
+instr_7(2, 0x01)
+push(2, 0xff)
+binary(2, 0x02)
+if cond:
+	instr_7(2, 0x02)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		push16(0x0085)
+		instr_10(2, 0x01)
+		push(2, 0x46)
+		instr_10(2, 0x02)
+
+	else:
+		push16(0x00ae)
+		instr_10(2, 0x01)
+		push(2, 0x47)
+		instr_10(2, 0x02)
+
+	instr_5(2, 0x04)
+	push(2, 0x3e)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x01)
+		instr_10(2, 0x03)
+		push(2, 0x1d)
+		instr_10(2, 0x04)
+
+	instr_5(2, 0x04)
+	push(2, 0x3c)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x02)
+		instr_10(2, 0x03)
+		push(2, 0x27)
+		instr_10(2, 0x04)
+
+	instr_5(2, 0x04)
+	push(2, 0x40)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x03)
+		instr_10(2, 0x03)
+		push(2, 0x31)
+		instr_10(2, 0x04)
+
+	call_109(arg(0x02), arg(0x01), arg(0x03))
+	call(2, call_54)
+	call_23(0x1b)
+	call_21(arg(0x03))
+	call_17(arg(0x03))
+	call_66(arg(0x03))
+	call_13(0x00, arg(0x02), arg(0x01), arg(0x04))
+	call_131(var(0x04), local(0x02))
+	call(2, call_20)
+	call_130(0x00)
+	instr_2(2, 0x00)
+	instr_10(2, 0x05)
+	call_130(0x01)
+	instr_2(2, 0x00)
+	instr_10(2, 0x06)
+	instr_6(2, 0x05)
+	push(2, 0xff)
+	binary(2, 0x06)
+	instr_6(2, 0x06)
+	push(2, 0xff)
+	binary(2, 0x06)
+	binary(2, 0x00)
+	if cond:
+		call_11(0x01, 0x00, 0x7c, 0x3c)
+		call(2, call_38)
+		call_65(0x01, 0x03, 0x07, 0x00)
+		call_41(0x01, 0x00, 0x00, 0x01)
+		push(2, 0x00)
+		instr_10(2, 0x07)
+		push(2, 0x17)
+		instr_10(2, 0x08)
+		push(2, 0x01)
+		instr_10(2, 0x09)
+		label label_315
+		instr_6(2, 0x07)
+		push(2, 0x4e)
+		binary(2, 0x04)
+		if cond:
+			instr_6(2, 0x07)
+			push(2, 0x14)
+			binary(2, 0x02)
+			instr_6(2, 0x07)
+			push(2, 0x20)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x26)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x2c)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x32)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x3b)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x41)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			instr_6(2, 0x07)
+			push(2, 0x47)
+			binary(2, 0x02)
+			binary(2, 0x01)
+			if cond:
+				call_23(0x71)
+
+			else:
+				instr_6(2, 0x07)
+				push(2, 0x1a)
+				binary(2, 0x02)
+				instr_6(2, 0x07)
+				push(2, 0x23)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				instr_6(2, 0x07)
+				push(2, 0x29)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				instr_6(2, 0x07)
+				push(2, 0x2f)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				instr_6(2, 0x07)
+				push(2, 0x38)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				instr_6(2, 0x07)
+				push(2, 0x3e)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				instr_6(2, 0x07)
+				push(2, 0x44)
+				binary(2, 0x02)
+				binary(2, 0x01)
+				if cond:
+					call_23(0x72)
+
+				else:
+					instr_6(2, 0x07)
+					push(2, 0x01)
+					binary(2, 0x02)
+					if cond:
+						call_23(0x73)
+
+					else:
+						instr_6(2, 0x07)
+						push(2, 0x4a)
+						binary(2, 0x02)
+						ifnot(1, label_407)
+						call_23(0x37)
+
+			label label_407
+			call_64(0x01, 0x00, 0x02, 0x08, 0x68, arg(0x07), arg(0x07))
+			instr_6(2, 0x07)
+			push(2, 0x01)
+			binary(2, 0x08)
+			instr_10(2, 0x07)
+			instr_6(2, 0x08)
+			instr_6(2, 0x09)
+			binary(2, 0x08)
+			instr_10(2, 0x08)
+			instr_6(2, 0x08)
+			push(2, 0x17)
+			binary(2, 0x04)
+			if cond:
+				push(2, 0x17)
+				instr_10(2, 0x08)
+				push(2, 0x01)
+				instr_10(2, 0x09)
+
+			instr_6(2, 0x08)
+			push(2, 0x1c)
+			binary(2, 0x06)
+			if cond:
+				push(2, 0x1c)
+				instr_10(2, 0x08)
+				push(2, 0xff)
+				instr_10(2, 0x09)
+
+			call_22(0x00, 0x10, u16(0x00e5), arg(0x08))
+			jmp(4, label_315)
+
+		call_44(0x00, 0x00, 0x08, 0x68, 0x00)
+		call_37(arg(0x03))
+		call_16(arg(0x03))
+		call_49(0x00)
+		call_63(0x00, 0x00, 0x08, 0x68, 0x00)
+		call_66(arg(0x03))
+		call_17(arg(0x03))
+		call(2, call_86)
+		call_42(0x00)
+		call_22(0x78, 0x10, u16(0x00e5), 0x17)
+		call(2, call_55)
+		func_74(arg(0x06), arg(0x05))
+		speak(0xfe, 0x00, s_thats_impressive)
+		call_131(0xff, 0x00)
+		call_131(0xff, 0x01)
+
+	else:
+		speak(0xfe, 0x00, s_seemed_do_something)
+
+	call(2, call_55)
+
+leave 0x09
+return acc
+
+label func_518
+func_28()
+instr_7(2, 0x01)
+push(2, 0xff)
+binary(2, 0x02)
+if cond:
+	return speak(0xfe, 0x00, s_theres_nothing_in_here)
+
+instr_7(2, 0x01)
+push(2, 0x3c)
+binary(2, 0x02)
+if cond:
+	return speak(0xfe, 0x00, s_absorbed_within_crystal)
+
+instr_7(2, 0x01)
+push(2, 0x3e)
+binary(2, 0x02)
+if cond:
+	return speak(0xfe, 0x00, s_absorbed_within_crystal)
+
+instr_7(2, 0x01)
+push(2, 0x40)
+binary(2, 0x02)
+if cond:
+	return speak(0xfe, 0x00, s_absorbed_within_crystal)
+
+return acc  # acc = speak(0xfe, 0x00, 0x05)
+
+label func_565
+instr_13(2, 0x01)
+call_130(0x00)
+instr_2(2, 0x00)
+instr_10(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0xff)
+binary(2, 0x02)
+if cond:
+	func_518(arg(0x01))
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x3c)
+binary(2, 0x02)
+instr_5(2, 0x04)
+push(2, 0x40)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x3e)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	func_171(0x00, arg(0x01))
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x4e)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_dont_think_empty_vial)
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x46)
+binary(2, 0x02)
+instr_5(2, 0x04)
+push(2, 0x48)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x4a)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x4c)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	speak(0xfe, 0x00, s_nothing_happened)
+	leave 0x01
+	return acc
+
+speak(0xfe, 0x00, s_hmm_thats_no_help)
+leave 0x01
+return acc
+
+label func_645
+instr_13(2, 0x01)
+call_130(0x01)
+instr_2(2, 0x00)
+instr_10(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0xff)
+binary(2, 0x02)
+if cond:
+	func_518(arg(0x01))
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x3c)
+binary(2, 0x02)
+instr_5(2, 0x04)
+push(2, 0x40)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x3e)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	func_171(0x01, arg(0x01))
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x4e)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_doubt_empty_vial_work)
+	leave 0x01
+	return acc
+
+instr_5(2, 0x04)
+push(2, 0x46)
+binary(2, 0x02)
+instr_5(2, 0x04)
+push(2, 0x48)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x4a)
+binary(2, 0x02)
+binary(2, 0x01)
+instr_5(2, 0x04)
+push(2, 0x4c)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	speak(0xfe, 0x00, s_nothing_happened)
+	leave 0x01
+	return acc
+
+speak(0xfe, 0x00, s_shape_doesnt_match_engraving)
+leave 0x01
+return acc
+
+label global_0
+call_143(0x6b, 0x68, 0x08, 0x68)
+call_130(0x00)
+instr_2(2, 0x00)
+push(2, 0xff)
+binary(2, 0x06)
+if cond:
+	call_3(0x02, 0x00, 0x46, u16(0x0085), 0x1d)
+
+call_130(0x01)
+instr_2(2, 0x00)
+push(2, 0xff)
+binary(2, 0x06)
+if cond:
+	call_3(0x02, 0x00, 0x47, u16(0x00ae), 0x1d)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(sub(0x5c, 0x48), 0x01), add(sub(u16(0x0094), u16(0x0086)), 0x01), 0x48, u16(0x0086))
+instr_2(2, 0x00)
+if cond:
+	return func_565()
+
+func_0(add(sub(0x5c, 0x48), 0x01), add(sub(u16(0x00be), u16(0x00ac)), 0x01), 0x48, u16(0x00ac))
+instr_2(2, 0x00)
+if cond:
+	return func_645()
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x0b)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x00d2))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	speak(0xfe, 0x00, s_hey_must_one_zanthias)
+	return call_5(u16(0x00d2))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

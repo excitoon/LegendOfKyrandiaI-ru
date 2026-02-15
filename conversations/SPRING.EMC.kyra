@@ -1,0 +1,428 @@
+# `SPRING.EMC`.
+
+strings = {
+	s_a_beautiful_tulip: 'A beautiful tulip.',
+	s_these_look_better_than: 'These look better than my garden.',
+	s_ive_always_loved_tulips: 'I\'ve always loved tulips.',
+	s_cant_stop_myself: 'I can\'t stop myself.',
+	s_wonder_if_fish_back: 'I wonder if there\'s fish back under the ground?',
+	s_id_hate_lose_spring: 'I\'d hate to lose this in the spring.',
+	s_someone_should_bottle_water: 'Someone should bottle this water and sell it!',
+	s_quite_flow_such_small: 'Quite a flow for such a small spring.',
+	s_wonderful: '  Wonderful...  ',
+	s_its_beautiful: ' ...it\'s beautiful. ',
+	s_big_rock_bottom_looks: 'That big rock on the bottom looks pretty.',
+	s_wish_had_time_soak: 'I wish I had time to soak my feet.',
+	s_title: 'A bubbling spring',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(0x11)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x66, u16(0x0110), 0x10)
+
+else:
+	call_3(0x02, 0x00, 0x66, u16(0x0110), 0x0a)
+
+call_4(0x12)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x58, u16(0x0108), 0x11)
+
+else:
+	call_3(0x02, 0x00, 0x58, u16(0x0108), 0x0b)
+
+call_4(0x13)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x5f, u16(0x010c), 0x12)
+
+else:
+	call_3(0x02, 0x00, 0x5f, u16(0x010c), 0x0c)
+
+call_4(0x14)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x61, u16(0x0106), 0x13)
+
+else:
+	call_3(0x02, 0x00, 0x61, u16(0x0106), 0x0d)
+
+push(2, 0x00)
+instr_9(2, 0x0f)
+push(2, 0x00)
+instr_9(2, 0x10)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x03)
+push(2, 0x01)
+instr_9(2, 0x03)
+push(2, 0xff)
+instr_10(2, 0x01)
+func_0(0x0b, 0x0b, 0x64, u16(0x0117))
+instr_2(2, 0x00)
+if cond:
+	push(2, 0x00)
+	instr_10(2, 0x01)
+	push16(0x0110)
+	instr_10(2, 0x02)
+	push(2, 0x66)
+	instr_10(2, 0x03)
+
+else:
+	func_0(0x09, 0x0c, 0x56, u16(0x0108))
+	instr_2(2, 0x00)
+	if cond:
+		push(2, 0x01)
+		instr_10(2, 0x01)
+		push16(0x0108)
+		instr_10(2, 0x02)
+		push(2, 0x58)
+		instr_10(2, 0x03)
+
+	else:
+		func_0(0x08, 0x0b, 0x5f, u16(0x010d))
+		instr_2(2, 0x00)
+		if cond:
+			push(2, 0x02)
+			instr_10(2, 0x01)
+			push16(0x010c)
+			instr_10(2, 0x02)
+			push(2, 0x5f)
+			instr_10(2, 0x03)
+
+		else:
+			func_0(0x0b, 0x0a, 0x5c, u16(0x0104))
+			instr_2(2, 0x00)
+			ifnot(1, label_262)
+			push(2, 0x03)
+			instr_10(2, 0x01)
+			push16(0x0106)
+			instr_10(2, 0x02)
+			push(2, 0x61)
+			instr_10(2, 0x03)
+
+label label_262
+instr_6(2, 0x01)
+push(2, 0xff)
+binary(2, 0x06)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0x00)
+	binary(2, 0x07)
+	if cond:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+		leave 0x03
+		return acc
+
+	call_4(add(0x11, arg(0x01)))
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	if cond:
+		call_6(add(0x11, arg(0x01)))
+		call_13(0x00, arg(0x03), arg(0x02), add(0x0a, arg(0x01)))
+		call_23(0x57)
+		call_14(0x11)
+		instr_5(2, 0x0f)
+		push(2, 0x00)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_a_beautiful_tulip)
+
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_these_look_better_than)
+
+		instr_5(2, 0x0f)
+		push(2, 0x02)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_ive_always_loved_tulips)
+
+		instr_5(2, 0x0f)
+		push(2, 0x03)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_cant_stop_myself)
+			push(2, 0xff)
+			instr_9(2, 0x0f)
+
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x08)
+		instr_9(2, 0x0f)
+
+	leave 0x03
+	return acc
+
+func_0(0x08, 0x0d, 0x55, sub(sub(u16(0x0140), u16(0x00c7)), 0x0d))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	call(2, call_19)
+	instr_2(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_wonder_if_fish_back)
+		leave 0x03
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		call_111(0x00, var(0x04))
+		leave 0x03
+		return acc
+
+	speak(0xfe, 0x00, s_id_hate_lose_spring)
+	leave 0x03
+	return acc
+
+func_0(0x08, 0x35, 0x55, sub(sub(u16(0x0140), u16(0x00ab)), 0x35))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	call(2, call_19)
+	instr_2(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_someone_should_bottle_water)
+		leave 0x03
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		call_111(0x00, var(0x04))
+		leave 0x03
+		return acc
+
+	speak(0xfe, 0x00, s_id_hate_lose_spring)
+	leave 0x03
+	return acc
+
+func_0(0x19, 0x17, 0x5d, sub(sub(u16(0x0140), u16(0x009f)), 0x17))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	call(2, call_19)
+	instr_2(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_quite_flow_such_small)
+		leave 0x03
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		call_111(0x00, var(0x04))
+		leave 0x03
+		return acc
+
+	speak(0xfe, 0x00, s_id_hate_lose_spring)
+	leave 0x03
+	return acc
+
+func_0(0x13, 0x1b, 0x75, sub(sub(u16(0x0140), u16(0x009c)), 0x1b))
+instr_2(2, 0x00)
+func_0(0x0c, 0x11, 0x70, u16(0x0091))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	func_28()
+	call(2, call_19)
+	instr_2(2, 0x00)
+	if cond:
+		call_4(0x61)
+		instr_2(2, 0x00)
+		if cond:
+			call(2, call_54)
+			call_14(0x0c)
+			call(2, call_55)
+			call_6(0x61)
+			speak(0xfe, 0x00, s_wonderful)
+			speak(0xfe, 0x00, s_its_beautiful)
+
+		else:
+			call_5(0x5e)
+			instr_5(2, 0x10)
+			push(2, 0x00)
+			binary(2, 0x02)
+			call_4(0x5f)
+			instr_2(2, 0x00)
+			push(2, 0x00)
+			binary(2, 0x02)
+			binary(2, 0x00)
+			if cond:
+				speak(0xfe, 0x00, s_big_rock_bottom_looks)
+
+			else:
+				speak(0xfe, 0x00, s_wish_had_time_soak)
+
+			instr_5(2, 0x10)
+			push(2, 0x01)
+			binary(2, 0x11)
+			instr_9(2, 0x10)
+
+		leave 0x03
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		call_111(0x00, var(0x04))
+		leave 0x03
+		return acc
+
+	speak(0xfe, 0x00, s_id_hate_lose_spring)
+	leave 0x03
+	return acc
+
+call(2, call_122)
+instr_2(2, 0x00)
+push(2, 0xfc)
+binary(2, 0x02)
+if cond:
+	call_56(0x00)
+	instr_2(2, 0x00)
+	push16(0x009b)
+	binary(2, 0x05)
+	if cond:
+		call_11(0x01, 0x01, u16(0x0086), 0x62)
+		leave 0x03
+		return acc
+
+	else:
+		call_11(0x01, 0x01, u16(0x0086), u16(0x00c2))
+		leave 0x03
+		return acc
+
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x03
+return acc
+leave 0x03
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x0c)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x0c)
+return acc  # acc = title(u16(0x00b3), 0x0c)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

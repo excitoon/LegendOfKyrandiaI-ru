@@ -1,0 +1,182 @@
+# `EXTHEAL.EMC`.
+
+strings = {
+	s_window_looks_great_night: 'This window looks great at night when the temple candles are lit.',
+	s_must_brynns_mother: 'That must be Brynn\'s mother.',
+	s_title: 'The Temple of Kyrandia',
+	s_wants_get_flowers: 'She wants me to get flowers?!',
+	s_grandfather_is_a_rock: 'Grandfather is a rock!',
+	s_needs_help_sympathy: 'He needs help, not sympathy!',
+	s_amulet_what_amulet: '  Amulet?  What Amulet?  ',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_8(0x01, 0x00, 0xff, 0xff, add(0x00, 0x02), 0x06, add(0x52, 0x0f), add(u16(0x0099), 0x21), 0x52, u16(0x0099))
+call_123(0x06, 0x53, 0x34, 0x17, u16(0x009f))
+call_10(add(0x52, 0x0f), add(u16(0x0099), 0x21), 0x52, u16(0x0099))
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x53, 0x34, 0x17, u16(0x009f))
+instr_2(2, 0x00)
+if cond:
+	call_9(add(0x52, 0x0f), add(u16(0x0099), 0x21), 0x52, u16(0x0099))
+	call_11(0x01, 0x01, 0x5a, u16(0x00a2))
+	return call_10(add(0x52, 0x0f), add(u16(0x0099), 0x21), 0x52, u16(0x0099))
+
+func_0(add(sub(0x6d, 0x1e), 0x01), add(sub(0x5b, 0x19), 0x01), 0x1e, 0x19)
+instr_2(2, 0x00)
+if cond:
+	call(2, call_19)
+	instr_2(2, 0x00)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+		return acc  # acc = call_19(...)
+
+	func_28()
+	return speak(0xfe, 0x00, s_window_looks_great_night)
+
+func_0(add(sub(0x62, 0x1a), 0x01), add(sub(u16(0x009d), u16(0x008a)), 0x01), 0x1a, u16(0x008a))
+instr_2(2, 0x00)
+if cond:
+	call(2, call_19)
+	instr_2(2, 0x00)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+		return acc  # acc = call_19(...)
+
+	func_28()
+	return speak(0xfe, 0x00, s_must_brynns_mother)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x02)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x02)
+return acc  # acc = title(u16(0x00b3), 0x02)
+
+label global_3
+instr_13(2, 0x00)
+call_4(u16(0x008b))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_4(0x7e)
+	instr_2(2, 0x00)
+	call_4(0x7f)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	binary(2, 0x00)
+	ifnot(1, label_291)
+	speak(0xfe, 0x00, s_wants_get_flowers)
+	speak(0xfe, 0x00, s_grandfather_is_a_rock)
+	speak(0xfe, 0x00, s_needs_help_sympathy)
+	call_5(u16(0x008b))
+
+label label_291
+call_4(u16(0x0096))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_4(u16(0x0080))
+	instr_2(2, 0x00)
+	ifnot(1, label_315)
+	speak(0xfe, 0x00, s_amulet_what_amulet)
+	call_5(u16(0x0096))
+
+label label_315
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

@@ -1,0 +1,245 @@
+# `SICKWIL.EMC`.
+
+strings = {
+	s_hey_more_dent: 'Hey!  No more dent.',
+	s_whats_this_a_big: 'What\'s this?  A big dent?',
+	s_hey: ' Hey! ',
+	s_the_teardrop_fits: 'The teardrop fits!',
+	s_would_never_cut_tree: 'I would never cut this tree down!',
+	s_ugh: ' Ugh! ',
+	s_even_trunk_rotten: 'Even the trunk is rotten.',
+	s_boy_willow_needs_help: 'Boy, this willow needs help.',
+	s_title: 'A rotting tree',
+	s_what_happened: 'What happened?',
+	s_willow_looks_half_dead: 'This willow looks half dead!',
+	s_wonder_if_malcolm_made: 'I wonder if that Malcolm made this tree sick?',
+	s_ugh_something_sticky_oozing: 'Ugh.  Something sticky is oozing out.',
+	s_ooze_sticking_shoes: 'That ooze is sticking to my shoes.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_143(0x31, 0x30, 0x43, 0x60)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x15, 0x15, 0x47, u16(0x0094))
+instr_2(2, 0x00)
+if cond:
+	call(2, call_19)
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	if cond:
+		func_28()
+		call_4(0x36)
+		instr_2(2, 0x00)
+		push(2, 0x01)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_hey_more_dent)
+
+		else:
+			speak(0xfe, 0x00, s_whats_this_a_big)
+
+		return acc  # acc = speak(...)
+
+	instr_5(2, 0x04)
+	push(2, 0x34)
+	binary(2, 0x02)
+	ifnot(1, label_207)
+	func_28()
+	call_4(0x36)
+	instr_2(2, 0x00)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		call(2, call_54)
+		call(2, call_20)
+		call_23(0x32)
+		call_13(0x00, 0x4b, u16(0x0099), 0x00)
+		call_24(0x01, 0x01)
+		call_11(0x01, 0x00, 0x75, u16(0x0082))
+		call_58(0x07, 0x03, 0x00)
+		speak(0xfe, 0x00, s_hey)
+		speak(0xfe, 0x00, s_the_teardrop_fits)
+		call_23(0x37)
+		call_22(0x02, 0x07, u16(0x00e4), 0x00)
+		call_21(0x00)
+		call_24(0x01, 0x06)
+		call(2, call_26)
+		call_25(0x15, add(0x00, 0x04))
+
+	else:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+
+	return acc
+
+label label_207
+func_0(add(sub(0x6d, 0x08), 0x01), add(sub(u16(0x00b3), u16(0x008e)), 0x01), 0x08, u16(0x008e))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	instr_5(2, 0x04)
+	push(2, 0x2c)
+	binary(2, 0x02)
+	if cond:
+		return speak(0xfe, 0x00, s_would_never_cut_tree)
+
+	call_4(u16(0x0095))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_ugh)
+		speak(0xfe, 0x00, s_even_trunk_rotten)
+		call_5(u16(0x0095))
+
+	else:
+		speak(0xfe, 0x00, s_boy_willow_needs_help)
+
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x08)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x08)
+return acc  # acc = title(u16(0x00b3), 0x08)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x0088))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_149(0x01)
+	speak(0xfe, 0x00, s_what_happened)
+	speak(0xfe, 0x00, s_willow_looks_half_dead)
+	call_5(u16(0x0088))
+	return call_149(0x00)
+
+call_4(u16(0x0089))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_4(0x7d)
+	instr_2(2, 0x00)
+	ifnot(1, label_354)
+	call_149(0x01)
+	speak(0xfe, 0x00, s_wonder_if_malcolm_made)
+	call_5(u16(0x0089))
+	return call_149(0x00)
+
+label label_354
+call_4(u16(0x00cf))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_149(0x01)
+	speak(0xfe, 0x00, s_ugh_something_sticky_oozing)
+	call_5(u16(0x00cf))
+	return call_149(0x00)
+
+call_4(u16(0x00d0))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_149(0x01)
+	speak(0xfe, 0x00, s_ooze_sticking_shoes)
+	call_5(u16(0x00d0))
+	return call_149(0x00)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

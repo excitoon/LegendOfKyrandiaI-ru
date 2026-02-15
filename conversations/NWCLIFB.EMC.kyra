@@ -1,0 +1,160 @@
+# `NWCLIFB.EMC`.
+
+strings = {
+	s_hmm_think_can_almost: 'Hmm - I think I can almost see the castle from here.',
+	s_what_a_view: 'What a view!',
+	s_title: 'A tall cliff',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+func_0(0x3e, u16(0x0130), 0x08, 0x08)
+instr_2(2, 0x00)
+func_0(0x43, 0x45, 0x45, u16(0x00f3))
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x13, 0x6f, 0x45, u16(0x00c9))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label global_0
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x44, 0x1e, 0x08, 0x34)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_139)
+	func_28()
+	push(2, 0x00)
+	instr_9(2, 0x03)
+	return acc
+
+label label_139
+func_0(0x1f, u16(0x0130), 0x08, 0x08)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_163)
+	func_28()
+	return speak(0xfe, 0x00, s_hmm_think_can_almost)
+
+label label_163
+func_74()
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_181)
+	func_28()
+	return speak(0xfe, 0x00, s_what_a_view)
+
+label label_181
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x02)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x02)
+return acc  # acc = title(u16(0x00b3), 0x02)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

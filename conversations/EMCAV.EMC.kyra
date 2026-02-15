@@ -1,0 +1,152 @@
+# `EMCAV.EMC`.
+
+strings = {
+	s_title: 'A cavern of emeralds',
+	s_wow_walls_made_emerald: 'Wow! The walls are made of emerald!',
+	s_could_used_these_earlier: 'I could have used these earlier!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_114(0x02)
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_24(0x01, 0x01)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x00)
+call_114(0x02)
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_24(0x00, 0x12)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_24(0x00, 0x12)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x00fe))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_5(u16(0x00fe))
+	return speak(0xfe, 0x00, s_wow_walls_made_emerald)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_114(0x02)
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_24(0x01, 0x01)
+	call_150(0x01)
+	call_24(0x01, 0x03)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+instr_5(2, 0x04)
+push(2, 0x04)
+binary(2, 0x02)
+call_4(u16(0x00ce))
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	func_28()
+	call_149(0x01)
+	speak(0xfe, 0x00, s_could_used_these_earlier)
+	call_149(0x00)
+	call_5(u16(0x00ce))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

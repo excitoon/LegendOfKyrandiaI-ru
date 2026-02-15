@@ -1,0 +1,245 @@
+# `LAVA.EMC`.
+
+strings = {
+	s_heat_pretty_intense: 'This heat is pretty intense...',
+	s_know_can_take: '...but I know I can take it!',
+	s002: 'BRANBRN.WSA',
+	s_not_a_problem: 'Not a problem...',
+	s004: 'I\'m burnin!',
+	s005: 'Oh no!',
+	s006: ' ',
+	s_title: 'A subterranean, volcanic river',
+	s_title_2: 'A frozen, subterranean river',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+instr_13(2, 0x01)
+call_152(0x01)
+call_143(0x60, 0x40, 0x08, 0x38)
+call_4(u16(0x00b3))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+
+else:
+	call_50(0x14, u16(0x00e4), 0x1d)
+	push(2, 0x00)
+	instr_10(2, 0x01)
+	label label_101
+	instr_6(2, 0x01)
+	push(2, 0x07)
+	binary(2, 0x05)
+	ifnot(1, label_114)
+	call_17(arg(0x01))
+	instr_6(2, 0x01)
+	push(2, 0x01)
+	binary(2, 0x08)
+	instr_10(2, 0x01)
+	jmp(4, label_101)
+
+label label_114
+leave 0x01
+return 0x00
+leave 0x01
+return acc
+
+label global_1
+instr_13(2, 0x02)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x4a, u16(0x0140), 0x00, 0x00)
+instr_2(2, 0x00)
+func_0(0x0b, 0x2e, 0x50, 0x47)
+instr_2(2, 0x00)
+binary(2, 0x01)
+call(2, call_122)
+instr_2(2, 0x00)
+push(2, 0xfa)
+binary(2, 0x02)
+binary(2, 0x01)
+if cond:
+	call_4(u16(0x00b3))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_313)
+	call(2, call_38)
+	speak(0xfe, 0x00, s_heat_pretty_intense)
+	speak(0xfe, 0x00, s_know_can_take)
+	call_11(0x01, 0x01, 0x66, 0x44)
+	instr_2(2, 0x00)
+	instr_10(2, 0x01)
+	instr_6(2, 0x01)
+	unary(2, 0x00)
+	if cond:
+		call_41(0x01, 0x00, 0x00, 0x02)
+		call(2, call_54)
+		call_65(0x01, 0x03, 0x07, 0x00)
+		speak(0xfe, 0x00, s_not_a_problem)
+		call_66(0x00)
+		call_66(0x01)
+		call_66(0x02)
+		call_66(0x03)
+		push(2, 0x00)
+		instr_10(2, 0x02)
+		label label_211
+		instr_6(2, 0x02)
+		push(2, 0x2f)
+		binary(2, 0x05)
+		if cond:
+			call_63(0x00, 0x00, 0x08, 0x38, arg(0x02))
+			instr_6(2, 0x02)
+			push(2, 0x2c)
+			binary(2, 0x05)
+			if cond:
+				instr_6(2, 0x02)
+				push(2, 0x21)
+				binary(2, 0x07)
+				if cond:
+					call_84(0x02)
+					call_85(0x00, 0x0c, 0x06, 0x10, 0x38, 0x04)
+					call_84(0x00)
+
+				else:
+					instr_6(2, 0x02)
+					push(2, 0x19)
+					binary(2, 0x07)
+					ifnot(1, 0x010b)
+					call_84(0x02)
+					call_85(0x00, 0x0c, 0x06, 0x10, 0x42, 0x05)
+					call_84(0x00)
+
+			else:
+				call_85(0x00, 0x0c, 0x06, 0x10, 0x38, 0x06)
+
+			call_59(0x00, 0x02, 0x60, u16(0x00a0), 0x08, 0x08)
+			instr_6(2, 0x02)
+			push(2, 0x28)
+			binary(2, 0x02)
+			if cond:
+				call_23(0x5e)
+
+			call_2(0x00, 0x07)
+			instr_6(2, 0x02)
+			push(2, 0x01)
+			binary(2, 0x08)
+			instr_10(2, 0x02)
+			jmp(4, label_211)
+
+		call_42(0x00)
+		call(2, call_55)
+		call_95(0x06)
+		leave 0x02
+		return acc
+
+	leave 0x02
+	return acc
+
+label label_313
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x02
+return acc
+leave 0x02
+return acc
+
+label global_2
+instr_13(2, 0x00)
+call_4(u16(0x00b3))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	title(u16(0x00b3), 0x07)
+
+else:
+	title(u16(0x00b3), 0x08)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_3
+instr_13(2, 0x00)
+call_4(u16(0x00b3))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call(2, call_38)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

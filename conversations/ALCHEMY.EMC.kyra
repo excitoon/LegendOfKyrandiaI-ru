@@ -1,0 +1,165 @@
+# `ALCHEMY.EMC`.
+
+strings = {
+	s_think_like_better_inside: 'I think I like it better inside.',
+	s_looks_like_alot_zanthias: 'Looks like alot of Zanthia\'s useless stuff.',
+	s_think_must_been_zanthias: 'I think this must have been Zanthia\'s bedroom.',
+	s_title: 'A bedroom',
+	s_ill_bet_looks_good: 'I\'ll bet this looks good in Zanthia\'s hair.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_40(u16(0x0100), u16(0x0088), u16(0x00c0), 0x48)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x4a, 0x12, 0x08, u16(0x0126))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_114)
+	func_28()
+	return speak(0xfe, 0x00, s_think_like_better_inside)
+
+label label_114
+func_0(0x3f, u16(0x0092), 0x09, 0x56)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_138)
+	func_28()
+	return speak(0xfe, 0x00, s_looks_like_alot_zanthias)
+
+label label_138
+func_0(0x29, 0x61, 0x5a, u16(0x00d7))
+instr_2(2, 0x00)
+func_0(0x63, 0x1c, 0x1f, u16(0x011c))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_172)
+	func_28()
+	return speak(0xfe, 0x00, s_think_must_been_zanthias)
+
+label label_172
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x03)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x04)
+push(2, 0x2d)
+binary(2, 0x02)
+call_4(u16(0x00f7))
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	func_28()
+	call_149(0x01)
+	speak(0xfe, 0x00, s_ill_bet_looks_good)
+	call_149(0x00)
+	return call_5(u16(0x00f7))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

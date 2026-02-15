@@ -1,0 +1,209 @@
+# `BURN.EMC`.
+
+strings = {
+	s_title: 'Crystal Ball taken.',
+	s_ha_does_think_im: 'Ha!  Does he think I\'m stupid?',
+	s_now_crystal_ball: 'Now I have the Crystal Ball.',
+	s_ow_thats_hot: 'Ow!  Thats hot!',
+	s_rats_hot_dogs: 'Rats!  And me with no hot-dogs.',
+	s_ow: 'Ow!',
+	s_title_2: 'A flaming tree',
+	s_title_3: 'A rocky outcropping',
+	s_thought_smelled_something_burning: 'I thought I smelled something burning!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(u16(0x00a2))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_23(0x1c)
+	jmp(4, label_86)
+
+label label_86
+call_4(u16(0x00a2))
+instr_2(2, 0x00)
+if cond:
+	call_17(0x00)
+	call_4(u16(0x00a3))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, 0x006f)
+	call_3(0x02, 0x00, 0x30, 0x4a, 0x06)
+
+else:
+	call_16(0x00)
+
+push(2, 0x00)
+instr_9(2, 0x0f)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x10, 0x12, 0x3c, 0x50)
+instr_2(2, 0x00)
+if cond:
+	call_4(u16(0x00a2))
+	instr_2(2, 0x00)
+	if cond:
+		call_4(u16(0x00a3))
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		ifnot(1, 0x00c7)
+		func_28()
+		instr_5(2, 0x04)
+		push(2, 0xff)
+		binary(2, 0x02)
+		ifnot(1, 0x00c7)
+		call(2, call_54)
+		call_14(0x33)
+		call_17(0x01)
+		call_66(0x01)
+		call_13(0x00, 0x39, 0x52, 0x00)
+		call(2, call_55)
+		call_5(u16(0x00a3))
+		title(u16(0x00b3), 0x00)
+		call_149(0x01)
+		speak(0xfe, 0x00, s_ha_does_think_im)
+		speak(0xfe, 0x00, s_now_crystal_ball)
+		return call_149(0x00)
+
+	else:
+		func_28()
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x08)
+		instr_9(2, 0x0f)
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_ow_thats_hot)
+
+		instr_5(2, 0x0f)
+		push(2, 0x02)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_rats_hot_dogs)
+
+		instr_5(2, 0x0f)
+		push(2, 0x03)
+		binary(2, 0x07)
+		if cond:
+			speak(0xfe, 0x00, s_ow)
+
+		return acc  # acc = speak(0xfe, 0x00, 0x05)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+call_4(u16(0x00a2))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	title(u16(0x00b3), 0x06)
+
+else:
+	title(u16(0x00b3), 0x07)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_3
+instr_13(2, 0x00)
+call_4(u16(0x00c3))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	speak(0xfe, 0x00, s_thought_smelled_something_burning)
+	call_5(u16(0x00c3))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_23(0x0a)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = call_23(0x0a)
+return acc  # acc = call_23(0x0a)
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

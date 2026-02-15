@@ -1,0 +1,134 @@
+# `ARCH.EMC`.
+
+strings = {
+	s_rats_id_like_pry: 'Rats!  I\'d like to pry one of these off!',
+	s_title: 'The Cavern of Twilight',
+	s_whew: '  Whew...  ',
+	s_thought_id_never_get: 'I thought I\'d never get out of there.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+func_0(add(sub(0x52, 0x3d), 0x01), add(sub(0x68, 0x50), 0x01), 0x3d, 0x50)
+instr_2(2, 0x00)
+func_0(add(sub(0x5d, 0x3d), 0x01), add(sub(0x4f, 0x11), 0x01), 0x3d, 0x11)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	func_28()
+	speak(0xfe, 0x00, s_rats_id_like_pry)
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = speak(0xfe, 0x00, 0x00)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x01)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x01)
+return acc  # acc = title(u16(0x00b3), 0x01)
+
+label global_3
+instr_13(2, 0x00)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x0093))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_33(0x01)
+	speak(0xfe, 0x00, s_whew)
+	speak(0xfe, 0x00, s_thought_id_never_get)
+	call_5(u16(0x0093))
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = call_5(u16(0x0093))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

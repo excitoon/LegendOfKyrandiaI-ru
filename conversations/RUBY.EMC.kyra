@@ -1,0 +1,296 @@
+# `RUBY.EMC`.
+
+strings = {
+	s_least_ill_get: 'At least I\'ll get this.',
+	s_yeow: '  Yeow!  ',
+	s_ow: '  Ow!    ',
+	s_ow_2: '      Ow!  ',
+	s_that_snake_bit_me: 'That snake bit me!',
+	s_hmm_where_is_he: 'Hmm, where is he now?',
+	s_oh_great: 'Oh great...',
+	s_like_being_poisoned_once: '...Like being poisoned once isn\'t enough.',
+	s_ruby_once_grew_now: 'The ruby that once grew there is now gone.',
+	s_title: 'A ruby tree',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(0x16)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x17, u16(0x008c), 0x00)
+
+else:
+	call_3(0x02, 0x00, 0x17, u16(0x008c), 0x06)
+
+call_4(0x17)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x36, u16(0x009a), 0x01)
+
+else:
+	call_3(0x02, 0x00, 0x36, u16(0x009a), 0x07)
+
+call_4(0x18)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x2d, u16(0x00c2), 0x02)
+
+else:
+	call_3(0x02, 0x00, 0x2d, u16(0x00c2), 0x08)
+
+call_4(0x19)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x21, u16(0x00ea), 0x03)
+
+else:
+	call_3(0x02, 0x00, 0x21, u16(0x00ea), 0x09)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x04)
+push(2, 0xff)
+instr_10(2, 0x01)
+func_0(0x10, 0x10, 0x17, u16(0x008c))
+instr_2(2, 0x00)
+if cond:
+	push(2, 0x00)
+	instr_10(2, 0x01)
+	push16(0x008c)
+	instr_10(2, 0x02)
+	push(2, 0x17)
+	instr_10(2, 0x03)
+
+else:
+	func_0(0x10, 0x10, 0x36, u16(0x009a))
+	instr_2(2, 0x00)
+	if cond:
+		push(2, 0x01)
+		instr_10(2, 0x01)
+		push16(0x009a)
+		instr_10(2, 0x02)
+		push(2, 0x36)
+		instr_10(2, 0x03)
+
+	else:
+		func_0(0x10, 0x10, 0x2d, u16(0x00c2))
+		instr_2(2, 0x00)
+		if cond:
+			push(2, 0x02)
+			instr_10(2, 0x01)
+			push16(0x00c2)
+			instr_10(2, 0x02)
+			push(2, 0x2d)
+			instr_10(2, 0x03)
+
+		else:
+			func_0(0x10, 0x10, 0x21, u16(0x00ea))
+			instr_2(2, 0x00)
+			ifnot(1, label_256)
+			push(2, 0x03)
+			instr_10(2, 0x01)
+			push16(0x00ea)
+			instr_10(2, 0x02)
+			push(2, 0x21)
+			instr_10(2, 0x03)
+
+label label_256
+instr_6(2, 0x01)
+push(2, 0xff)
+binary(2, 0x06)
+if cond:
+	call_114(0x02)
+	instr_2(2, 0x00)
+	if cond:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+		leave 0x04
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x00)
+	binary(2, 0x07)
+	if cond:
+		push(2, 0x00)
+		instr_9(2, 0x03)
+		leave 0x04
+		return acc
+
+	func_28()
+	call_4(add(0x16, arg(0x01)))
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	if cond:
+		call_4(0x67)
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		if cond:
+			push(2, 0x00)
+			instr_10(2, 0x04)
+			call_5(0x67)
+
+		else:
+			call_4(0x68)
+			instr_2(2, 0x00)
+			unary(2, 0x00)
+			if cond:
+				push(2, 0x01)
+				instr_10(2, 0x04)
+				call_5(0x68)
+
+			else:
+				call_61(0x64, 0x01)
+				instr_2(2, 0x00)
+				push(2, 0x32)
+				binary(2, 0x05)
+				if cond:
+					push(2, 0x01)
+					instr_10(2, 0x04)
+
+				else:
+					push(2, 0x00)
+					instr_10(2, 0x04)
+
+		instr_6(2, 0x04)
+		if cond:
+			call_6(add(0x16, arg(0x01)))
+			call_13(0x00, arg(0x03), arg(0x02), add(0x06, arg(0x01)))
+			call_23(0x5d)
+			call_14(0x06)
+			speak(0xfe, 0x00, s_least_ill_get)
+
+		else:
+			call_23(0x60)
+			call_109(sub(var(0x02), 0x0a), sub(var(0x01), 0x07), 0x00)
+			call_21(0x00)
+			call_114(0x01)
+			instr_2(2, 0x00)
+			unary(2, 0x00)
+			if cond:
+				speak(0xfe, 0x00, s_yeow)
+				speak(0xfe, 0x00, s_ow)
+				speak(0xfe, 0x00, s_ow_2)
+				call(2, call_110)
+				speak(0xfe, 0x00, s_that_snake_bit_me)
+				call_33(0x01)
+				speak(0xfe, 0x00, s_hmm_where_is_he)
+
+			else:
+				speak(0xfe, 0x00, s_oh_great)
+				speak(0xfe, 0x00, s_like_being_poisoned_once)
+
+	else:
+		speak(0xfe, 0x00, s_ruby_once_grew_now)
+
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	leave 0x04
+	return acc
+
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x04
+return acc
+leave 0x04
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x09)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x09)
+return acc  # acc = title(u16(0x00b3), 0x09)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

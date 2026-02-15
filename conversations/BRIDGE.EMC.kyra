@@ -1,0 +1,188 @@
+# `BRIDGE.EMC`.
+
+strings = {
+	s_title: 'A rickety bridge',
+	s_hey: 'Hey!  ',
+	s_fixed_bridge_herman: 'You fixed the bridge, Herman!',
+	s_completely_safe_now: 'It\'s completely safe now!',
+	s_uh_yeah: 'Uh, yeah...',
+	s_it_looks: 'It looks...',
+	s_definitely_rebuilt: '...definitely rebuilt!',
+	s_thanks_brandon: 'Thanks, Brandon.',
+	s_so_wheres_my_saw: 'So where\'s my saw?',
+	s_well: 'Well...',
+	s_i: 'I...',
+	s_uh: 'uh...',
+	s_didnt_know_would_want: '...didn\'t know you would want it back.',
+	s_ill_go_find_right: 'But, I\'ll go find it right away!',
+	s_think_spends_too_much: 'I think he spends too much time in this cave.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_40(u16(0x0100), 0x5c, u16(0x00c0), 0x38)
+call_24(0x01, 0x01)
+call_4(0x07)
+instr_2(2, 0x00)
+call_4(0x09)
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	call_73(add(add(0x29, 0x23), 0x01), 0x05, 0x70, u16(0x00d8), add(0x00, 0x07), 0x02)
+
+call_123(0x06, 0x3a, 0x28, 0x08, 0x00)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+func_0(0x3a, 0x28, 0x08, 0x00)
+instr_2(2, 0x00)
+if cond:
+	call_11(0x01, 0x01, 0x3e, 0x08)
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = call_11(0x01, 0x01, 0x3e, 0x08)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x00)
+return acc  # acc = title(u16(0x00b3), 0x00)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_24(0x01, 0x03)
+call_4(0x07)
+instr_2(2, 0x00)
+call_4(0x09)
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	call(2, call_54)
+	call_65(0x01, 0x05, 0x07, 0x00)
+	speak(0xfe, 0x00, s_hey)
+	speak(0xfe, 0x00, s_fixed_bridge_herman)
+	call_65(0x01, 0x03, add(add(0x29, 0x23), 0x01), 0x02)
+	call_33(0x01)
+	speak(0xfe, 0x02, s_completely_safe_now)
+	call_65(0x01, 0x05, add(add(0x29, 0x23), 0x01), 0x02)
+	speak(0xfe, 0x00, s_uh_yeah)
+	call_33(0x01)
+	speak(0xfe, 0x00, s_it_looks)
+	speak(0xfe, 0x00, s_definitely_rebuilt)
+	call_65(0x01, 0x03, add(add(0x29, 0x23), 0x01), 0x02)
+	call_33(0x01)
+	speak(0xfe, 0x02, s_thanks_brandon)
+	speak(0xfe, 0x00, s_so_wheres_my_saw)
+	call_33(0x02)
+	speak(0xfe, 0x02, s_well)
+	speak(0xfe, 0x02, s_i)
+	speak(0xfe, 0x02, s_uh)
+	speak(0xfe, 0x02, s_didnt_know_would_want)
+	call_33(0x01)
+	speak(0xfe, 0x02, s_ill_go_find_right)
+	call_81(0x70, u16(0x0118), 0x02)
+	call_65(0x01, 0x03, 0x07, 0x00)
+	call_81(0x70, add(u16(0x0140), 0x10), 0x02)
+	speak(0xfe, 0x00, s_think_spends_too_much)
+	call_5(0x09)
+	return call_55()
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_90(0x00)
+instr_2(2, 0x00)
+push(2, 0x02)
+binary(2, 0x02)
+if cond:
+	call_24(0x01, 0x02)
+
+else:
+	call_24(0x01, 0x0b)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

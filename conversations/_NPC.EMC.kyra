@@ -1,0 +1,1531 @@
+# `_NPC.EMC`.
+
+strings = {
+	s_lets_try_this: ' Let\'s try this. ',
+	s_here_goes: ' Here goes... ',
+	s_feel_kind_strange: 'I feel kind of strange...',
+	s003: 'PEGASUS.WSA',
+	s_nothing_can_do_im: 'There\'s nothing I can do with it when I\'m like this.',
+	s005: 'Brynn:\r\rBeware. Malcolm has broken free,\rand certainly will seek me first.\rYou must guide Brandon. Direct him\rtoward the Amulet. Perhaps the\rlavender rose could key the\rspells.\r\r                          -Kallak\r\rP.S. Solicit aid from Darm and\rZanthia in building the amulet\'s\rpowers.',
+	s_hmm_blank_except_brynns: 'Hmm?  Blank, except it has Brynn\'s name on it!',
+	s_id_better_go_temple: 'I\'d better go to the temple.',
+	s_brynn_know_do: 'Brynn will know what to do!',
+	s_sniff: '(sniff)',
+	s_smells_like_rose: 'Smells like a rose to me.',
+	s_yum_small_snack_nice: 'Yum!  A small snack is nice.',
+	s_yuck_medevial_sushi: 'Yuck!  Medevial sushi.',
+	s_tastes_like_alfalfa: 'Tastes like alfalfa...',
+	s_but_i_like_it: '...but I like it!',
+	s_gulp: ' -gulp- ',
+	s_ahhh: ' Ahhh... ',
+	s_cough: '*COUGH*   ',
+	s_cough_2: '   *COUGH*',
+	s_yuck_salt_water: 'Yuck! It\'s salt water!',
+	s_ooh_that_tingles: 'Ooh.  That tingles.',
+	s_hey_one_jewels_amulet: 'Hey, one of the jewels on my amulet is blue now!',
+	s_hiccup: '*Hiccup*  ',
+	s_hiccup_2: '  *Hiccup*',
+	s_hiccup_3: ' *Hiccup* ',
+	s_think_theyre_gone: 'I think they\'re gone.',
+	s_yecch_tastes_like_furniture: 'Yecch!  Tastes like furniture polish!',
+	s_oh_no: '  Oh no!  ',
+	s_not_again: 'Not again!',
+	s_yum_warm_spicy: 'Yum!  It\'s warm and spicy!',
+	s_time_little_visit: 'Time for a little visit.',
+	s_potion_should_help_get: 'This potion should help me get in there.',
+	s032: 'LEP_IN.WSA',
+	s_hey_that_was_fun: 'Hey, that was fun!',
+	s_ow: ' Ow! ',
+	s_gold_coin_enormous: 'This gold coin is ENORMOUS!',
+	s_caught_teardrop_pool_sorrow: 'I caught this teardrop at the Pool of Sorrow.',
+	s_caught_teardrop_pool: 'I caught this teardrop by this pool.',
+	s_nice_addition_marble_colection: 'A nice addition to my marble colection.',
+	s_delicious_hope_arent_poisonous: 'Delicious!  I hope they aren\'t poisonous.',
+	s040: 'SHATTER.WSA',
+	s_great: '  Great!  ',
+	s_last_note_shattered_ice: 'That last note shattered the ice!',
+	s_didnt_think_playing_bad: 'I didn\'t think my playing was THAT bad.',
+	s_lets_try_this_2: 'Let\'s try this.',
+	s_i_did_it: 'I did it!',
+	s_made_flames_go_out: 'I made the flames go out!',
+	s_guess_ill_give_shot: 'I guess I\'ll give it a shot...',
+	s_it_worked: '  It worked!  ',
+	s_scroll_starting_pay_off: 'This scroll is starting to pay off!',
+	s_brrr: ' Brrr! ',
+	s_hmm_nothing_happened_feel: 'Hmm.  Nothing happened, but I feel like going somewhere else.',
+	s_thought_dead_starfish: 'I thought this was a dead starfish.',
+	s_garnet_big_must_very: 'A garnet this big must be very valuable.',
+	s_oooh_purple_sparkles: 'Oooh!  Purple sparkles!',
+	s_shaped_like_perfect_triangle: 'It\'s shaped like a perfect triangle.',
+	s_diamond_glitters_sunlight: 'This diamond glitters in the sunlight.',
+	s_emerald_favorite_color: 'This emerald is my favorite color.',
+	s_pearl_must_come_sea: 'This pearl must have come from the sea.',
+	s_dangerous_getting_ruby: 'It was dangerous getting this ruby.',
+	s_hmm_isnt_di_magno: 'Hmm,  isn\'t this Di Magno Ferro, Sil Quad Oxylate?',
+	s_hmm_corundum_conundrum: 'Hmm?  A corundum conundrum!',
+	s_curious_combination_colors: 'What a curious combination of colors.',
+	s_looks_like_huge_cough: 'Looks like a huge cough drop.',
+	s_darkest_gem_ever_seen: 'This is the darkest gem I have ever seen.',
+	s_stone_warm_touch: 'This stone is warm to the touch.',
+	s_jewel_glows_own_inner: 'This jewel glows with its own inner-light.',
+	s_rare_gem_tiny_rainbow: 'This rare gem has a tiny rainbow inside it.',
+	s_smells_wonderful: 'Smells wonderful!',
+	s_rare_exotic_flower: 'A rare, exotic flower.',
+	s_oh_look_got_half: 'Oh look, it\'s got half a worm in it.',
+	s_rose_tingles_hand: 'This rose tingles in my hand.',
+	s_id_like_keep: 'I\'d like to keep this!',
+	s_this_looks_important: 'This looks important!',
+	s_oh_no_pitch: 'Oh, no!  Pitch!',
+	s_think_im_going_nuts: 'I think I\'m going nuts.',
+	s_wonder_floornut_tastes_like: 'I wonder what a floornut tastes like?',
+	s_glowing_very_bright: 'It\'s glowing very bright!',
+	s_its_getting_dimmer: 'It\'s getting dimmer.',
+	s_oh_real_dim: 'Oh, no!  It\'s real dim!',
+	s_uh_oh_almost_out: 'Uh, oh!  It\'s almost out!',
+	s_help: ' Help!! ',
+	s_no_more_meat: 'No more meat.',
+	s_i_love_these: 'I love these!',
+	s_could_carved_emerald: 'Could this be carved from emerald?',
+	s_that_tickles: 'That tickles!',
+	s_obviously_magical_orb: 'Obviously a magical orb.',
+	s_feels_like_watermelon: 'This feels like a watermelon.',
+	s_what_time_is_it: 'What time IS it?',
+	s_where_does_this_go: 'Where does this go?',
+	s_am_thinking_empty: 'What am I thinking?  It\'s empty!',
+	s_nothing_in_it: 'Nothing in it.',
+	s_this_thing_is_heavy: 'This thing is heavy.',
+	s_way_too_big_head: 'This is way too big for my head!',
+	s_obviously_item_royalty: 'Obviously an item of royalty.',
+	s_probably_isnt_restroom: 'This probably isn\'t to the restroom!',
+	s_pretty_tasty_getting_hungry: 'Pretty tasty! I was getting hungry.',
+	s_more_meat_left: 'No more meat left on this.',
+	s_sniff_sniff: 'Sniff, sniff.',
+	s_feels_like_im_completely: 'It feels like I\'m completely weightless.',
+	s_do_do_everything: 'Why do I have to do everything?',
+	s_wish_had_horse_ride: 'I wish I had a horse to ride.',
+	s_cant_believe_let_happen: 'I can\'t believe they let this happen!',
+	s_too_bad_cant_take: 'Too bad I can\'t take a quick nap!',
+	s_think_im_getting_rash: 'I think I\'m getting a rash!',
+	s_where_is_everybody: 'Where is everybody?',
+	s_youd_think_somebody_would: 'You\'d think somebody would have a map of this place!',
+	s_seems_like_these_caverns: 'It seems like these caverns go on forever.',
+	s_eeeu_got_pitch_all: 'Eeeu!  I got pitch all over my vest!',
+	s_how_am_supposed_know: 'How am I supposed to know what to do!?',
+	s_im_starving_never_did: 'I\'m starving!  I never did get lunch!',
+	s_would_notice_if_just: 'Who would notice if I just went home?',
+	s_my_feet_are_killing: 'My feet are killing me!',
+	s_id_do_anything_pair: 'I\'d do anything for a pair of sandals!',
+	s_wonder_how_grandfather_doing: 'I wonder how Grandfather is doing?',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6, global_7, global_8, global_9]
+
+label global_4
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_51
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+call(2, call_54)
+call(2, call_38)
+speak(0xfe, 0x00, s_lets_try_this)
+call_11(0x00, 0x00, 0x5a, u16(0x00c8))
+call_65(0x01, 0x05, 0x07, 0x00)
+speak(0xfe, 0x00, s_here_goes)
+call_96(0x00, 0x01, var(0x04))
+call_24(0x01, 0x01)
+call_33(0x01)
+speak(0xfe, 0x00, s_feel_kind_strange)
+call_24(0x01, 0x22)
+call_33(0x01)
+call_66(0x00)
+call_66(0x01)
+call_66(0x02)
+call_66(0x03)
+call_66(0x04)
+call_41(0x01, 0x00, 0x00, 0x03)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x1c, 0x00)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x23, 0x1c)
+call_64(0x02, 0x00, 0x0a, 0x08, u16(0x0098), 0x27, 0x24)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x2a, 0x28)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x31, 0x2d)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x2d, 0x30)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x23, 0x1c)
+call_64(0x01, 0x00, 0x0a, 0x08, u16(0x0098), 0x70, 0x2d)
+call_42(0x00)
+call_5(u16(0x00c9))
+call_46(0xff, 0xff)
+call(2, call_20)
+call(2, call_55)
+return call_45(0x00, 0x00, 0x00, 0xff, add(add(add(add(add(add(add(add(add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x47), 0x01), 0x08), 0x01), 0x44), 0x01), 0x0b), 0x01), 0x00))
+return acc  # acc = call_45(0x00, 0x00, 0x00, 0xff, add(add(add(add(add(add(add(add(add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x47), 0x01), 0x08), 0x01), 0x44), 0x01), 0x0b), 0x01), 0x00))
+
+label global_0
+instr_13(2, 0x01)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x04)
+push(2, 0x00)
+binary(2, 0x07)
+if cond:
+	call_114(0x02)
+	instr_2(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_nothing_can_do_im)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x2a)
+	binary(2, 0x02)
+	if cond:
+		call_4(u16(0x0081))
+		instr_2(2, 0x00)
+		if cond:
+			call(2, call_20)
+			call(2, call_82)
+			call(2, call_54)
+			call_60(0x00, 0x07, 0x18, 0x4e, 0x05)
+			call(2, call_55)
+			call(2, call_74)
+			call(2, call_83)
+			call_14(0x2a)
+
+		else:
+			speak(0xfe, 0x00, s_hmm_blank_except_brynns)
+			instr_5(2, 0x00)
+			push(2, 0x00)
+			push(2, 0x03)
+			binary(2, 0x08)
+			binary(2, 0x03)
+			instr_5(2, 0x00)
+			push(2, 0x00)
+			push(2, 0x02)
+			binary(2, 0x08)
+			binary(2, 0x03)
+			binary(2, 0x00)
+			ifnot(1, label_350)
+			speak(0xfe, 0x00, s_id_better_go_temple)
+			speak(0xfe, 0x00, s_brynn_know_do)
+
+		label label_350
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x10)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_sniff)
+		speak(0xfe, 0x00, s_smells_like_rose)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x26)
+	binary(2, 0x02)
+	if cond:
+		call_23(0x34)
+		call_14(0x27)
+		speak(0xfe, 0x00, s_yum_small_snack_nice)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x22)
+	binary(2, 0x02)
+	if cond:
+		call_23(0x34)
+		call_14(0x23)
+		speak(0xfe, 0x00, s_yuck_medevial_sushi)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x3c)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4d)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		instr_5(2, 0x04)
+		push(2, 0x43)
+		binary(2, 0x02)
+		if cond:
+			call_34(0x00)
+			instr_2(2, 0x00)
+			push(2, 0x00)
+			push(2, 0x10)
+			binary(2, 0x08)
+			push(2, 0x01)
+			binary(2, 0x08)
+			push(2, 0x13)
+			binary(2, 0x08)
+			push(2, 0x01)
+			binary(2, 0x08)
+			push(2, 0x0f)
+			binary(2, 0x08)
+			binary(2, 0x03)
+			if cond:
+				call(2, call_54)
+				call_96(0x00, 0x01, var(0x04))
+				speak(0xfe, 0x00, s_tastes_like_alfalfa)
+				speak(0xfe, 0x00, s_but_i_like_it)
+				call_14(0x4f)
+				call(2, call_55)
+				leave 0x01
+				return acc
+
+			else:
+				instr_2(2, 0x01)
+				jmp(4, func_74)
+				leave 0x01
+				return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x47)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x46)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x47)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_gulp)
+			speak(0xfe, 0x00, s_ahhh)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x49)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x48)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x49)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_cough)
+			speak(0xfe, 0x00, s_cough_2)
+			speak(0xfe, 0x00, s_yuck_salt_water)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x4d)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x4c)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call(2, call_54)
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x4d)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_ooh_that_tingles)
+			call_4(0x59)
+			instr_2(2, 0x00)
+			unary(2, 0x00)
+			if cond:
+				call_108(0x04)
+				speak(0xfe, 0x00, s_hey_one_jewels_amulet)
+
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x3f)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x3e)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call(2, call_54)
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x3f)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_hiccup)
+			speak(0xfe, 0x00, s_hiccup_2)
+			speak(0xfe, 0x00, s_hiccup_3)
+			speak(0xfe, 0x00, s_think_theyre_gone)
+			call_33(0x01)
+			speak(0xfe, 0x00, s_hiccup_2)
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x41)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x40)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call(2, call_54)
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x41)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_yecch_tastes_like_furniture)
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x42)
+		binary(2, 0x02)
+		if cond:
+			call(2, call_54)
+			call_96(0x00, 0x01, var(0x04))
+			call_14(0x4f)
+			speak(0xfe, 0x00, s_oh_no)
+			call(2, call_110)
+			speak(0xfe, 0x00, s_not_again)
+			call(2, call_39)
+			call(2, call_20)
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x3d)
+		binary(2, 0x02)
+		instr_5(2, 0x04)
+		push(2, 0x3c)
+		binary(2, 0x02)
+		binary(2, 0x01)
+		if cond:
+			call(2, call_54)
+			call_96(0x00, 0x01, var(0x04))
+			instr_5(2, 0x04)
+			push(2, 0x3d)
+			binary(2, 0x02)
+			if cond:
+				call_14(0x4f)
+
+			else:
+				call_14(0x4e)
+
+			speak(0xfe, 0x00, s_yum_warm_spicy)
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		instr_5(2, 0x04)
+		push(2, 0x44)
+		binary(2, 0x02)
+		ifnot(1, label_935)
+		call(2, call_54)
+		call(2, call_38)
+		instr_5(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0a)
+		binary(2, 0x08)
+		binary(2, 0x02)
+		if cond:
+			func_51(0x6e, u16(0x00dc))
+			call_4(u16(0x00bc))
+			instr_2(2, 0x00)
+			if cond:
+				speak(0xfe, 0x00, s_time_little_visit)
+
+			else:
+				speak(0xfe, 0x00, s_potion_should_help_get)
+
+			call_11(0x01, 0x00, 0x6e, u16(0x00dc))
+			call_65(0x01, 0x03, 0x07, 0x00)
+
+		call_96(0x00, 0x01, var(0x04))
+		call_14(0x4f)
+		call_23(0x16)
+		instr_5(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0a)
+		binary(2, 0x08)
+		binary(2, 0x03)
+		if cond:
+			call_133(0x03)
+
+		instr_5(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0a)
+		binary(2, 0x08)
+		binary(2, 0x02)
+		if cond:
+			call_133(0x02)
+			call_24(0x01, 0x01)
+			call_41(0x00, 0x00, 0x00, 0x20)
+			call_64(0x01, 0x00, 0x0b, 0x50, u16(0x00d8), 0x08, 0x00)
+			call_23(0x18)
+			call_64(0x01, 0x00, 0x0b, 0x50, u16(0x00d8), 0x15, 0x09)
+			call_42(0x00)
+			call_5(u16(0x00b4))
+			call_46(0xff, 0xff)
+			call_45(0x00, 0x00, 0x00, 0xff, add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x0b))
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		call_23(0x17)
+		call(2, call_134)
+		speak(0xfe, 0x00, s_hey_that_was_fun)
+		call(2, call_55)
+		leave 0x01
+		return acc
+
+	label label_935
+	instr_5(2, 0x04)
+	push(2, 0x2c)
+	binary(2, 0x02)
+	if cond:
+		call_23(0x3a)
+		speak(0xfe, 0x00, s_ow)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x16)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_gold_coin_enormous)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x34)
+	binary(2, 0x02)
+	if cond:
+		call_34(0x00)
+		instr_2(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x08)
+		binary(2, 0x08)
+		binary(2, 0x03)
+		if cond:
+			speak(0xfe, 0x00, s_caught_teardrop_pool_sorrow)
+
+		else:
+			speak(0xfe, 0x00, s_caught_teardrop_pool)
+
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x2b)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_nice_addition_marble_colection)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x28)
+	binary(2, 0x02)
+	if cond:
+		call_23(0x34)
+		call(2, call_20)
+		speak(0xfe, 0x00, s_delicious_hope_arent_poisonous)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x37)
+	binary(2, 0x02)
+	if cond:
+		call_5(u16(0x00ed))
+		call_34(0x00)
+		instr_2(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x08)
+		binary(2, 0x08)
+		binary(2, 0x02)
+		call_4(0x52)
+		instr_2(2, 0x00)
+		binary(2, 0x00)
+		if cond:
+			call_5(u16(0x0085))
+			call(2, call_54)
+			call(2, call_38)
+			call_81(0x78, u16(0x00a0), 0x00)
+			call_65(0x01, 0x03, 0x07, 0x00)
+			call(2, call_115)
+			call_41(0x01, 0x00, 0x00, 0x28)
+			call_23(0x51)
+			call_64(0x01, 0x00, 0x0f, 0x21, u16(0x00b8), 0x0b, 0x07)
+			call_33(0x01)
+			call_23(0x51)
+			call_64(0x01, 0x00, 0x0a, 0x21, u16(0x00b8), 0x0f, 0x0c)
+			call_23(0x68)
+			call_64(0x01, 0x00, 0x0a, 0x21, u16(0x00b8), 0x1e, 0x10)
+			call_49(0x00)
+			call_63(0x00, 0x00, 0x21, u16(0x00b8), 0x1e)
+			call(2, call_86)
+			call_42(0x00)
+			call_9(add(0x5b, 0x0e), add(u16(0x00d3), 0x49), 0x5b, u16(0x00d3))
+			call_6(0x52)
+			call_123(0x02, 0x4b, 0x7c, 0x24, u16(0x00c4))
+			speak(0xfe, 0x00, s_great)
+			speak(0xfe, 0x00, s_last_note_shattered_ice)
+			speak(0xfe, 0x00, s_didnt_think_playing_bad)
+			call(2, call_55)
+
+		else:
+			call_65(0x01, 0x03, 0x07, 0x00)
+			call(2, call_115)
+
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x50)
+	binary(2, 0x02)
+	if cond:
+		call_34(0x00)
+		instr_2(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x04)
+		binary(2, 0x08)
+		binary(2, 0x02)
+		call_4(u16(0x00a2))
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		binary(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_lets_try_this_2)
+			call(2, call_54)
+			call_11(0x00, 0x00, 0x76, 0x78)
+			call_65(0x01, 0x05, 0x07, 0x00)
+			call_116(0x01)
+			call_23(0x0a)
+			speak(0xfe, 0x00, s_i_did_it)
+			speak(0xfe, 0x00, s_made_flames_go_out)
+			call_5(u16(0x00a2))
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		call_34(0x00)
+		instr_2(2, 0x00)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x08)
+		binary(2, 0x08)
+		binary(2, 0x02)
+		call_4(u16(0x00b3))
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		binary(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_guess_ill_give_shot)
+			call(2, call_54)
+			call_11(0x00, 0x00, 0x7a, 0x54)
+			call_65(0x01, 0x03, 0x07, 0x00)
+			call_116(0x01)
+			call_65(0x01, 0xff, 0x07, 0x00)
+			call_5(u16(0x00b3))
+			call_57(0x00)
+			instr_2(2, 0x00)
+			call_56(0x00)
+			instr_2(2, 0x00)
+			call(2, call_46)
+			instr_12(2, 0x02)
+			call_45(0x00, 0x00, 0x00, 0x03, add(add(add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x47), 0x01), 0x08))
+			speak(0xfe, 0x00, s_it_worked)
+			speak(0xfe, 0x00, s_scroll_starting_pay_off)
+			call(2, call_55)
+			leave 0x01
+			return acc
+
+		call_116(0x01)
+		speak(0xfe, 0x00, s_brrr)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x51)
+	binary(2, 0x02)
+	if cond:
+		call_116(0x00)
+		speak(0xfe, 0x00, s_hmm_nothing_happened_feel)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x32)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_thought_dead_starfish)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_garnet_big_must_very)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x01)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_oooh_purple_sparkles)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x02)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_shaped_like_perfect_triangle)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x03)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_diamond_glitters_sunlight)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x04)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_emerald_favorite_color)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x05)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_pearl_must_come_sea)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x06)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_dangerous_getting_ruby)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x07)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_hmm_isnt_di_magno)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x08)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_hmm_corundum_conundrum)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x09)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_curious_combination_colors)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x0a)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_looks_like_huge_cough)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x0b)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_darkest_gem_ever_seen)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x0c)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_stone_warm_touch)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x0d)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_jewel_glows_own_inner)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x0e)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_rare_gem_tiny_rainbow)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x11)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_smells_wonderful)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x12)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_rare_exotic_flower)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x27)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_oh_look_got_half)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x13)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_rose_tingles_hand)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x14)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_id_like_keep)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x18)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_this_looks_important)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x19)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_oh_no_pitch)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x1a)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_think_im_going_nuts)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x1b)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_wonder_floornut_tastes_like)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x1d)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_glowing_very_bright)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x1e)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_its_getting_dimmer)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x1f)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_oh_real_dim)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x20)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_uh_oh_almost_out)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x21)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_help)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x23)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_no_more_meat)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x28)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_i_love_these)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x2b)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_nice_addition_marble_colection)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x2d)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_could_carved_emerald)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x2e)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_that_tickles)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x33)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_obviously_magical_orb)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x34)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_feels_like_watermelon)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x38)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_what_time_is_it)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x39)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_where_does_this_go)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_am_thinking_empty)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_nothing_in_it)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x66)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_this_thing_is_heavy)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x67)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_way_too_big_head)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x68)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_obviously_item_royalty)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x69)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_probably_isnt_restroom)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x24)
+	binary(2, 0x02)
+	if cond:
+		call_23(0x34)
+		call_14(0x25)
+		speak(0xfe, 0x00, s_pretty_tasty_getting_hungry)
+		leave 0x01
+		return acc
+
+	instr_5(2, 0x04)
+	push(2, 0x25)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_more_meat_left)
+		leave 0x01
+		return acc
+
+	leave 0x01
+	return acc
+
+else:
+	instr_5(2, 0x00)
+	push(2, 0x00)
+	push(2, 0x10)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x13)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x47)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x08)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x44)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x0b)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_sniff_sniff)
+
+	else:
+		call_114(0x02)
+		instr_2(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_feels_like_im_completely)
+			leave 0x01
+			return acc
+
+		call_34(0x00)
+		instr_2(2, 0x00)
+		instr_10(2, 0x01)
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x08)
+		instr_9(2, 0x0f)
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x04)
+		instr_5(2, 0x0f)
+		push(2, 0x03)
+		binary(2, 0x06)
+		binary(2, 0x01)
+		if cond:
+			push(2, 0x01)
+			instr_9(2, 0x0f)
+
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		binary(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		if cond:
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_do_do_everything)
+
+			instr_5(2, 0x0f)
+			push(2, 0x02)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_wish_had_horse_ride)
+
+			instr_5(2, 0x0f)
+			push(2, 0x03)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_cant_believe_let_happen)
+
+			leave 0x01
+			return acc
+
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		binary(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		if cond:
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_too_bad_cant_take)
+
+			instr_5(2, 0x0f)
+			push(2, 0x02)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_think_im_getting_rash)
+
+			instr_5(2, 0x0f)
+			push(2, 0x03)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_where_is_everybody)
+
+			leave 0x01
+			return acc
+
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		binary(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x08)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x44)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0b)
+		binary(2, 0x08)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		if cond:
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_youd_think_somebody_would)
+
+			instr_5(2, 0x0f)
+			push(2, 0x02)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_seems_like_these_caverns)
+
+			instr_5(2, 0x0f)
+			push(2, 0x03)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_eeeu_got_pitch_all)
+
+			leave 0x01
+			return acc
+
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		binary(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		if cond:
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_how_am_supposed_know)
+
+			instr_5(2, 0x0f)
+			push(2, 0x02)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_im_starving_never_did)
+
+			instr_5(2, 0x0f)
+			push(2, 0x03)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_would_notice_if_just)
+
+			leave 0x01
+			return acc
+
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x08)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x44)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0b)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		binary(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x00)
+		push(2, 0x10)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x13)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x47)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x08)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x44)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x0b)
+		binary(2, 0x08)
+		push(2, 0x01)
+		binary(2, 0x08)
+		push(2, 0x2e)
+		binary(2, 0x08)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		ifnot(1, label_2339)
+		instr_5(2, 0x0f)
+		push(2, 0x01)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_my_feet_are_killing)
+
+		instr_5(2, 0x0f)
+		push(2, 0x02)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_id_do_anything_pair)
+
+		instr_5(2, 0x0f)
+		push(2, 0x03)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_wonder_how_grandfather_doing)
+
+		leave 0x01
+		return acc
+
+label label_2339
+leave 0x01
+return acc
+
+label global_1
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_2
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_3
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_5
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_6
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_7
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_8
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+
+label global_9
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc

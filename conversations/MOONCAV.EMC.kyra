@@ -1,0 +1,382 @@
+# `MOONCAV.EMC`.
+
+strings = {
+	s_last_youve_come: 'At last you\'ve come!',
+	s_been_waiting_long: 'I have been waiting for so long!',
+	s_can_you_take_me: 'Can you take me with you?',
+	s_please_ignore_him: 'Please ignore him.',
+	s_cannot_think_clearly: 'He cannot think clearly.',
+	s_am_glad_see: 'I am glad to see you...',
+	s_would_like_go_leave: '...and would like to go with you when you leave.',
+	s_both_cant_go: 'We both can\'t go!',
+	s_well_im_staying: 'Well I\'m not staying!',
+	s_i_hate_it_here: 'I hate it here!',
+	s_been_here_longer: 'I have been here longer.',
+	s_should_leave_first: 'I should leave first.',
+	s_we_came_together: 'We came together!',
+	s_recall_entered_first: 'You will recall, I entered first.',
+	s_taunting_shadow_wraiths: 'You were taunting shadow wraiths.',
+	s_one_us_must_stay: 'One of us must stay...',
+	s_until_altar_completed: '...until the altar is completed.',
+	s_dont_finish_yourselves: 'Why don\'t you finish it yourselves...',
+	s_both_could_leave: '...and then you both could leave?',
+	s_serve_master_tides_love: 'We serve the Master of Tides and Love.',
+	s_we_are_not_craftsmen: 'We are not craftsmen!',
+	s_could_do_though: 'But YOU could do it, though.',
+	s_all_could_go: 'And then we all could go!',
+	s_do_want_do: 'What do you want me to do?',
+	s_we_dont_know: 'We don\'t know.',
+	s_just_like_float_could: 'We just like to float, and we could teach you.',
+	s_if_can_think_do: 'If I can think of what to do...',
+	s_i_will_return: '...I will return.',
+	s028: 'MOONCAV1.WSA',
+	s029: 'MOONCAV2.WSA',
+	s_the_moonstone_fits: ' The moonstone fits... ',
+	s_im_brilliant: ' I\'m brilliant! ',
+	s_whole_place_lit_moonlight: 'The whole place is lit up with moonlight!',
+	s_thank_you_thank_you: 'Thank you! Thank you!',
+	s_and_now_as_we: 'And now as we promised...',
+	s_i_feel_strange: 'I feel strange...',
+	s_one_gems_amulet_now: 'One of the gems on my amulet is now glowing purple!',
+	s_something_missing_here: 'Is something missing here?',
+	s_ill_bet_something_fits: 'I\'ll bet something fits in there...',
+	s_but_this_is_not: '...but this is not it.',
+	s_already_put_one_here: 'I already put one here.',
+	s_moonstone_locked_place: 'The moonstone is locked in place.',
+	s_there_is_already_a: 'There is already a moonstone there.',
+	s_title: 'The Pantheon of Moonlight',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_51
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+call(2, call_54)
+func_51(0x24, 0x2c)
+tell(0x75, 0x24, 0x2c, s_last_youve_come)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+call_11(0x01, 0x00, 0x6e, 0x7c)
+func_51(0x24, 0x2c)
+tell(0x75, 0x24, 0x2c, s_been_waiting_long)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x75, 0x24, 0x2c, s_can_you_take_me)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, u16(0x010e))
+tell(0x72, 0x24, u16(0x010e), s_please_ignore_him)
+call_33(add(0x01, 0x02))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_cannot_think_clearly)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_am_glad_see)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_would_like_go_leave)
+call_33(add(0x01, 0x05))
+call(2, call_53)
+func_51(0x24, 0x2c)
+tell(0x75, 0x24, 0x2c, s_both_cant_go)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, u16(0x010e))
+tell(0x72, 0x24, u16(0x010e), s_well_im_staying)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_i_hate_it_here)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, 0x2c)
+tell(0x75, 0x24, 0x2c, s_been_here_longer)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x75, 0x24, 0x2c, s_should_leave_first)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, u16(0x010e))
+tell(0x72, 0x24, u16(0x010e), s_we_came_together)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, 0x2c)
+tell(0x75, 0x24, 0x2c, s_recall_entered_first)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x75, 0x24, 0x2c, s_taunting_shadow_wraiths)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, u16(0x010e))
+tell(0x72, 0x24, u16(0x010e), s_one_us_must_stay)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_until_altar_completed)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+speak(0xfe, 0x00, s_dont_finish_yourselves)
+func_51(0x24, 0x2c)
+speak(0xfe, 0x00, s_both_could_leave)
+tell(0x75, 0x24, 0x2c, s_serve_master_tides_love)
+call_33(add(0x01, 0x05))
+call(2, call_53)
+tell(0x75, 0x24, 0x2c, s_we_are_not_craftsmen)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+func_51(0x24, u16(0x010e))
+tell(0x72, 0x24, u16(0x010e), s_could_do_though)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_all_could_go)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+speak(0xfe, 0x00, s_do_want_do)
+tell(0x72, 0x24, u16(0x010e), s_we_dont_know)
+call_33(add(0x01, 0x05))
+call(2, call_53)
+tell(0x72, 0x24, u16(0x010e), s_just_like_float_could)
+call_33(add(0x01, 0x03))
+call(2, call_53)
+speak(0xfe, 0x00, s_if_can_think_do)
+func_51(0x24, 0x2c)
+speak(0xfe, 0x00, s_i_will_return)
+call_55()
+
+label func_462
+return acc  # acc = call_55(...)
+call_41(0x00, 0xff, 0x00, 0x1c)
+call_41(0x00, 0x00, 0x01, 0x1d)
+call_23(0x37)
+call_64(0x01, 0x00, 0x0a, 0x11, 0x18, 0x22, 0x00)
+call_23(0x6c)
+call_64(0x01, 0x00, 0x0a, 0x11, 0x18, 0x27, 0x23)
+call_64(0x01, 0x01, 0x0a, 0x15, u16(0x0088), 0x0c, 0x00)
+call_108(0x03)
+call_42(0x01)
+return call_42(0x00)
+
+label global_0
+call_152(0x01)
+call_143(0x47, u16(0x0110), 0x11, 0x18)
+call_143(0x64, u16(0x0108), 0x15, u16(0x0088))
+call_4(0x54)
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_3(0x02, 0x00, 0x57, u16(0x0099), 0x15)
+	call_50(0x14, u16(0x00e4), 0x0d)
+	call_17(0x04)
+	call_17(0x05)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(sub(0x3d, 0x2a), 0x01), add(sub(0x3d, 0x1f), 0x01), 0x2a, 0x1f)
+instr_2(2, 0x00)
+if cond:
+	call_4(u16(0x00ad))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	call_4(0x54)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	binary(2, 0x00)
+	ifnot(1, label_611)
+	func_74()
+	return call_5(u16(0x00ad))
+
+label label_611
+func_0(add(sub(0x47, 0x2c), 0x01), add(sub(u16(0x011e), u16(0x00ff)), 0x01), 0x2c, u16(0x00ff))
+instr_2(2, 0x00)
+if cond:
+	call_4(u16(0x00ad))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	call_4(0x54)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	binary(2, 0x00)
+	ifnot(1, label_653)
+	func_74()
+	return call_5(u16(0x00ad))
+
+label label_653
+func_0(0x11, 0x11, 0x57, u16(0x0099))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	call_4(0x54)
+	instr_2(2, 0x00)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		instr_5(2, 0x04)
+		push(2, 0x0d)
+		binary(2, 0x02)
+		if cond:
+			call(2, call_54)
+			call_13(0x00, 0x57, u16(0x0099), 0x15)
+			call_11(0x00, 0x00, 0x6e, 0x7c)
+			call_65(0x01, 0x03, 0x07, 0x00)
+			speak(0xfe, 0x00, s_the_moonstone_fits)
+			speak(0xfe, 0x00, s_im_brilliant)
+			call_23(0x73)
+			call_22(0x05, 0x14, u16(0x00e4), 0x0d)
+			call(2, call_20)
+			call_5(0x54)
+			call(2, call_38)
+			call_11(0x00, 0x00, 0x78, u16(0x00a0))
+			call_65(0x01, 0x05, 0x07, 0x00)
+			speak(0xfe, 0x00, s_whole_place_lit_moonlight)
+			tell(0x75, 0x24, 0x2c, s_thank_you_thank_you)
+			call_33(add(0x01, 0x03))
+			call(2, call_53)
+			tell(0x72, 0x24, u16(0x010e), s_and_now_as_we)
+			call_33(add(0x01, 0x04))
+			call(2, call_53)
+			call_49(0x01)
+			call_66(0x00)
+			call_66(0x01)
+			call_66(0x02)
+			call_66(0x03)
+			call_66(0x04)
+			call_66(0x05)
+			func_462()
+			call_37(0x00)
+			call_37(0x01)
+			call_37(0x02)
+			call_37(0x03)
+			call(2, call_55)
+			speak(0xfe, 0x00, s_i_feel_strange)
+			call_65(0x01, 0x03, 0x07, 0x00)
+			speak(0xfe, 0x00, s_one_gems_amulet_now)
+
+		else:
+			instr_5(2, 0x04)
+			push(2, 0xff)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_something_missing_here)
+
+			else:
+				speak(0xfe, 0x00, s_ill_bet_something_fits)
+				speak(0xfe, 0x00, s_but_this_is_not)
+
+		return acc  # acc = speak(0xfe, 0x00, 0x27)
+
+	else:
+		instr_5(2, 0x04)
+		push(2, 0x0d)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_already_put_one_here)
+
+		else:
+			instr_5(2, 0x04)
+			push(2, 0xff)
+			binary(2, 0x02)
+			if cond:
+				speak(0xfe, 0x00, s_moonstone_locked_place)
+
+			else:
+				speak(0xfe, 0x00, s_there_is_already_a)
+
+		return acc  # acc = speak(...)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x2b)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x2b)
+return acc  # acc = title(u16(0x00b3), 0x2b)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

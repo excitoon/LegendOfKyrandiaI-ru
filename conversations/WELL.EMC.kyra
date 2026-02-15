@@ -1,0 +1,271 @@
+# `WELL.EMC`.
+
+strings = {
+	s_hello_anybody_down: 'Hello?  Anybody down there?',
+	s_wonder_if_green_hat: 'I wonder if my green hat is still down there?',
+	s_well_now_filled_fresh: 'The well is now filled with fresh water!',
+	s_somethings_happening_down: 'Something\'s happening down there...',
+	s_huh: ' Huh!? ',
+	s_a_moonstone: 'A Moonstone!',
+	s_wish_hadnt_done: 'I wish I hadn\'t done that.',
+	s_oops_hope_dont_need: 'Oops.  I hope I don\'t need that later.',
+	s_looks_like_herman_fixed: 'Looks like Herman fixed this.',
+	s_initials_right_side: 'There\'s my initials right on the side there.',
+	s_carved_them_myself: 'I carved them there myself!',
+	s_title: 'An ancient well',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(0x69)
+instr_2(2, 0x00)
+if cond:
+	call_3(0x02, 0x00, 0x4b, u16(0x00b1), 0x09)
+
+push(2, 0x00)
+instr_9(2, 0x0f)
+push(2, 0x00)
+instr_9(2, 0x0f)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x08, 0x19, 0x4e, u16(0x00b2))
+instr_2(2, 0x00)
+func_0(0x07, 0x12, 0x55, u16(0x00b9))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	func_28()
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	if cond:
+		call_4(0x69)
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		if cond:
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x08)
+			instr_9(2, 0x0f)
+			instr_5(2, 0x0f)
+			push(2, 0x01)
+			binary(2, 0x0e)
+			if cond:
+				speak(0xfe, 0x00, s_hello_anybody_down)
+
+			else:
+				speak(0xfe, 0x00, s_wonder_if_green_hat)
+
+		else:
+			speak(0xfe, 0x00, s_well_now_filled_fresh)
+
+		return acc  # acc = speak(...)
+
+	else:
+		instr_5(2, 0x04)
+		push(2, 0x32)
+		binary(2, 0x03)
+		instr_5(2, 0x04)
+		push(2, 0x16)
+		binary(2, 0x03)
+		binary(2, 0x00)
+		instr_5(2, 0x04)
+		push(2, 0x26)
+		binary(2, 0x03)
+		binary(2, 0x00)
+		if cond:
+			call_61(0x01, 0x00)
+			call_31(acc, var(0x04))
+
+		push(2, 0x01)
+		instr_9(2, 0x03)
+		instr_5(2, 0x04)
+		push(2, 0x4e)
+		binary(2, 0x07)
+		instr_5(2, 0x04)
+		push(2, 0x4f)
+		binary(2, 0x05)
+		binary(2, 0x00)
+		if cond:
+			call_4(0x69)
+			instr_2(2, 0x00)
+			ifnot(1, label_210)
+			func_28()
+			call_23(0x1b)
+			return call_111(0x00, var(0x04))
+
+		label label_210
+		call_72(0x5c, u16(0x00c4), var(0x04))
+		call_4(0x69)
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		if cond:
+			call_23(0x6a)
+			call_33(0x02)
+
+		call_23(0x6b)
+		instr_5(2, 0x04)
+		push(2, 0x16)
+		binary(2, 0x02)
+		if cond:
+			call_4(0x69)
+			instr_2(2, 0x00)
+			unary(2, 0x00)
+			ifnot(1, label_285)
+			speak(0xfe, 0x00, s_somethings_happening_down)
+			call_23(0x17)
+			call_21(0x00)
+			call_5(0x69)
+			call_57(0x00)
+			instr_2(2, 0x00)
+			push(2, 0x10)
+			binary(2, 0x09)
+			call_56(0x00)
+			instr_2(2, 0x00)
+			call(2, call_121)
+			instr_12(2, 0x02)
+			call_0(0x0d, 0x01)
+			speak(0xfe, 0x00, s_huh)
+			return speak(0xfe, 0x00, s_a_moonstone)
+
+		label label_285
+		instr_5(2, 0x04)
+		push(2, 0x16)
+		binary(2, 0x02)
+		if cond:
+			speak(0xfe, 0x00, s_wish_hadnt_done)
+
+		else:
+			speak(0xfe, 0x00, s_oops_hope_dont_need)
+
+		return acc  # acc = speak(...)
+
+func_0(0x18, 0x38, 0x19, u16(0x00a6))
+instr_2(2, 0x00)
+func_0(0x2a, 0x1d, 0x0d, u16(0x00ba))
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x15, 0x10, 0x1f, u16(0x00de))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	func_28()
+	return speak(0xfe, 0x00, s_looks_like_herman_fixed)
+
+func_0(0x1a, 0x2c, 0x45, u16(0x00fd))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	instr_5(2, 0x0f)
+	push(2, 0x01)
+	binary(2, 0x08)
+	instr_9(2, 0x0f)
+	instr_5(2, 0x0f)
+	push(2, 0x01)
+	binary(2, 0x0e)
+	if cond:
+		speak(0xfe, 0x00, s_initials_right_side)
+
+	else:
+		speak(0xfe, 0x00, s_carved_them_myself)
+
+	return acc  # acc = speak(...)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x0b)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

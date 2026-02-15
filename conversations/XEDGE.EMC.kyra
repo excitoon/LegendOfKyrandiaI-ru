@@ -1,0 +1,377 @@
+# `XEDGE.EMC`.
+
+strings = {
+	s000: 'SAW.WSA',
+	s_almost_finished: 'Almost finished?',
+	s_dont_go_visit_brynn: 'Why don\'t you go visit Brynn in the temple?',
+	s_oh_now_youre_hurry: 'Oh, so now you\'re in a hurry.',
+	s_if_watch_going_cost: 'If you watch, it\'s going to cost you extra.',
+	s_id_let_help_dont: 'I\'d let you help, but I don\'t like to loan tools.',
+	s_well_saw_yours_could: 'Well, this saw of yours could use a sharpening.',
+	s_dont_something_else_do: 'Don\'t you have something else to do?',
+	s_still_gonna_take_while: 'It\'s still gonna take a while to get through this tree.',
+	s_okay_ill_come_back: 'Okay, I\'ll come back later.',
+	s_title: 'A rocky outcropping',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x0d)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_143(0x40, 0x40, 0x30, 0x38)
+
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x0d)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_4(0x38)
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	ifnot(1, label_117)
+	call_16(0x00)
+	call_16(0x01)
+	call_10(0x66, 0x6e, 0x5f, 0x4c)
+	call_5(0x08)
+
+label label_117
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x01)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x0d)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	func_0(0x2a, 0x3c, 0x3e, 0x36)
+	instr_2(2, 0x00)
+	ifnot(1, label_521)
+	call_4(0x38)
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	ifnot(1, label_521)
+	call_41(0x01, 0x00, 0x00, 0x00)
+	call(2, call_54)
+	call_11(0x01, 0x00, 0x66, add(u16(0x0084), 0x10))
+	call(2, call_38)
+	call_58(0x07, 0x05, 0x00)
+	speak(0xfe, 0x00, s_almost_finished)
+	call(2, call_68)
+	label label_177
+	call(2, call_69)
+	instr_2(2, 0x00)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		call(2, call_70)
+		jmp(4, label_177)
+
+	call_17(0x00)
+	call_66(0x00)
+	call_17(0x01)
+	call_66(0x01)
+	call_64(0x01, 0x00, 0x0c, 0x30, 0x38, sub(0x11, 0x01), sub(0x01, 0x01))
+	call_4(u16(0x0082))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		tell(u16(0x00c9), 0x2c, 0x60, s_dont_go_visit_brynn)
+
+	else:
+		call_4(u16(0x00f6))
+		instr_2(2, 0x00)
+		push(2, 0x01)
+		binary(2, 0x02)
+		if cond:
+			tell(u16(0x00c9), 0x2c, 0x60, s_oh_now_youre_hurry)
+
+		else:
+			call_4(u16(0x00f5))
+			instr_2(2, 0x00)
+			push(2, 0x01)
+			binary(2, 0x02)
+			if cond:
+				tell(u16(0x00c9), 0x2c, 0x60, s_if_watch_going_cost)
+				call_5(u16(0x00f6))
+
+			else:
+				call_4(u16(0x00f4))
+				instr_2(2, 0x00)
+				push(2, 0x01)
+				binary(2, 0x02)
+				if cond:
+					tell(u16(0x00c9), 0x2c, 0x60, s_id_let_help_dont)
+					call_5(u16(0x00f5))
+
+				else:
+					tell(u16(0x00c9), 0x2c, 0x60, s_well_saw_yours_could)
+
+	push(2, 0x05)
+	instr_10(2, 0x01)
+	label label_294
+	instr_6(2, 0x01)
+	push(2, 0x00)
+	binary(2, 0x06)
+	if cond:
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x12)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x12)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x13)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x13)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x11)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x11)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x01)
+		binary(2, 0x09)
+		instr_10(2, 0x01)
+		jmp(4, label_294)
+
+	call(2, call_53)
+	call_64(0x01, 0x00, 0x0c, 0x30, 0x38, sub(0x15, 0x01), sub(0x14, 0x01))
+	call_4(u16(0x00f4))
+	instr_2(2, 0x00)
+	push(2, 0x01)
+	binary(2, 0x02)
+	if cond:
+		tell(u16(0x00c9), 0x2c, 0x60, s_dont_something_else_do)
+
+	else:
+		tell(u16(0x00c9), 0x2c, 0x60, s_still_gonna_take_while)
+		call_5(u16(0x00f4))
+
+	push(2, 0x05)
+	instr_10(2, 0x01)
+	label label_399
+	instr_6(2, 0x01)
+	push(2, 0x00)
+	binary(2, 0x06)
+	if cond:
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x16)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x16)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x17)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x17)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		push(2, 0x01)
+		push(2, 0x00)
+		call_61(0x12, 0x0c)
+		instr_2(2, 0x00)
+		push(2, 0x30)
+		push(2, 0x38)
+		push(2, 0x18)
+		push(2, 0x01)
+		binary(2, 0x09)
+		push(2, 0x18)
+		push(2, 0x01)
+		binary(2, 0x09)
+		call(2, call_64)
+		instr_12(2, 0x07)
+		instr_6(2, 0x01)
+		push(2, 0x01)
+		binary(2, 0x09)
+		instr_10(2, 0x01)
+		jmp(4, label_399)
+
+	call_33(0x02)
+	call(2, call_53)
+	speak(0xfe, 0x00, s_okay_ill_come_back)
+	push(2, 0x01)
+	push(2, 0x00)
+	call_61(0x12, 0x0c)
+	instr_2(2, 0x00)
+	push(2, 0x30)
+	push(2, 0x38)
+	push(2, 0x1a)
+	push(2, 0x01)
+	binary(2, 0x09)
+	push(2, 0x19)
+	push(2, 0x01)
+	binary(2, 0x09)
+	call(2, call_64)
+	instr_12(2, 0x07)
+	push(2, 0x01)
+	push(2, 0x00)
+	call_61(0x12, 0x0c)
+	instr_2(2, 0x00)
+	push(2, 0x30)
+	push(2, 0x38)
+	push(2, 0x01)
+	push(2, 0x01)
+	binary(2, 0x09)
+	push(2, 0x01)
+	push(2, 0x01)
+	binary(2, 0x09)
+	call(2, call_64)
+	instr_12(2, 0x07)
+	call_16(0x00)
+	call_37(0x00)
+	call_16(0x01)
+	call_37(0x01)
+	call(2, call_55)
+	call_42(0x00)
+	leave 0x01
+	return acc
+
+label label_521
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x01
+return acc
+leave 0x01
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x0a)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x0a)
+return acc  # acc = title(u16(0x00b3), 0x0a)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

@@ -1,0 +1,142 @@
+# `LANDING.EMC`.
+
+strings = {
+	s_title: 'A dark island',
+	s001: 'LANDING.WSA',
+	s_woof_that_was_wild: 'Woof!  That was wild!',
+	s_whoops: 'Whoops...',
+	s_almost_walked_off_edge: '...Almost walked off the edge there.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_143(0x62, u16(0x00b8), 0x08, 0x28)
+call_40(u16(0x0100), 0x66, 0x54, 0x3e)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x00)
+call_4(u16(0x00c9))
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_6(u16(0x00c9))
+	call_33(0x02)
+	call_41(0x00, 0x00, 0x00, 0x01)
+	call_43(0x00, 0x00, 0x08, 0x08, 0x28)
+	call_42(0x00)
+	call_24(0x01, 0x01)
+	call_150(0x01)
+	call_24(0x01, 0x1f)
+	call_49(0x01)
+	call_48(0x00, 0x05, 0x6a, 0x54)
+	speak(0xfe, 0x00, s_woof_that_was_wild)
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = speak(0xfe, 0x00, 0x02)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_4(u16(0x00fb))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_114(0x02)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_207)
+	speak(0xfe, 0x00, s_whoops)
+	speak(0xfe, 0x00, s_almost_walked_off_edge)
+	call_5(u16(0x00fb))
+
+label label_207
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

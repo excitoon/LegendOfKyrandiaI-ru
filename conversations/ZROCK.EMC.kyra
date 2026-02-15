@@ -1,0 +1,171 @@
+# `ZROCK.EMC`.
+
+strings = {
+	s_all_seals_gone: 'Where have all the seals gone?',
+	s_id_rather_fishing_suppose: 'I\'d rather be fishing I suppose.',
+	s_surf_looks_rough_today: 'That surf looks rough today!',
+	s_title: 'A southern cliff',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x10)
+binary(2, 0x08)
+push(2, 0x01)
+binary(2, 0x08)
+push(2, 0x05)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_17(0x00)
+	call_3(0x02, 0x00, 0x40, 0x08, 0x0d)
+
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x10)
+binary(2, 0x08)
+push(2, 0x01)
+binary(2, 0x08)
+push(2, 0x06)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_16(0x00)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x3f, 0x12, 0x49, 0x08)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_173)
+	func_28()
+	instr_5(2, 0x00)
+	push(2, 0x00)
+	push(2, 0x10)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x05)
+	binary(2, 0x08)
+	binary(2, 0x02)
+	if cond:
+		return speak(0xfe, 0x00, s_all_seals_gone)
+
+	instr_5(2, 0x00)
+	push(2, 0x00)
+	push(2, 0x10)
+	binary(2, 0x08)
+	push(2, 0x01)
+	binary(2, 0x08)
+	push(2, 0x06)
+	binary(2, 0x08)
+	binary(2, 0x02)
+	if cond:
+		return speak(0xfe, 0x00, s_id_rather_fishing_suppose)
+
+	return speak(0xfe, 0x00, s_surf_looks_rough_today)
+
+label label_173
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x03)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

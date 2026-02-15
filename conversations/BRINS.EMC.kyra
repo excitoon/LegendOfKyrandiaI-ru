@@ -1,0 +1,204 @@
+# `BRINS.EMC`.
+
+strings = {
+	s_brynn_always_took_granite: 'Brynn... I always took her for granite.',
+	s_she_was_always_so: 'She was always so kind to me.',
+	s_looks_like_might_storm: 'Looks like it might storm pretty soon.',
+	s_cant_think_sleep_time: 'I can\'t think of sleep at a time like this.',
+	s_judging_decor_must_been: 'Judging by the decor, this must have been Brynn\'s bedroom.',
+	s_title: 'A bedroom',
+	s_ill_try_brynn: 'I\'ll try this on you Brynn...',
+	s_piscenia_rosea_rare_kyrandia: 'Piscenia Rosea.  Rare in Kyrandia.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_51
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_40(u16(0x0100), u16(0x0088), u16(0x00c0), 0x48)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x2e, 0x1a, 0x35, u16(0x010d))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_129)
+	func_28()
+	instr_5(2, 0x0f)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_brynn_always_took_granite)
+		push(2, 0x01)
+		instr_9(2, 0x0f)
+
+	else:
+		speak(0xfe, 0x00, s_she_was_always_so)
+		push(2, 0x00)
+		instr_9(2, 0x0f)
+
+	return acc  # acc = speak(...)
+
+label label_129
+func_0(0x56, 0x1d, 0x08, 0x08)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_152)
+	func_28()
+	return speak(0xfe, 0x00, s_looks_like_might_storm)
+
+label label_152
+func_0(0x50, 0x3b, 0x18, u16(0x0084))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_176)
+	func_28()
+	return speak(0xfe, 0x00, s_cant_think_sleep_time)
+
+label label_176
+func_0(0x3c, u16(0x008e), 0x08, 0x59)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_200)
+	func_28()
+	return speak(0xfe, 0x00, s_judging_decor_must_been)
+
+label label_200
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x05)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x05)
+return acc  # acc = title(u16(0x00b3), 0x05)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x06)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call(2, call_38)
+	func_51(0x5e, u16(0x00fa))
+	speak(0xfe, 0x00, s_ill_try_brynn)
+	call_11(0x00, 0x00, 0x55, u16(0x00ee))
+	func_51(0x5e, u16(0x00fa))
+	return call_148()
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x04)
+push(2, 0x22)
+binary(2, 0x02)
+call_4(0x0f)
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	func_28()
+	call_149(0x01)
+	speak(0xfe, 0x00, s_piscenia_rosea_rare_kyrandia)
+	call_149(0x00)
+	return call_5(0x0f)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

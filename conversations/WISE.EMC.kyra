@@ -1,0 +1,367 @@
+# `WISE.EMC`.
+
+strings = {
+	s_hummaugh_brinny_wella: 'Hummaugh, brinny wella!',
+	s_hummaugh_hummaugh: 'Hummaugh, hummaugh!',
+	s_good_morning_nolby: 'Good morning, Nolby.',
+	s_gefn_ony_mummel: 'Gefn ony, mummel!',
+	s_verty_hummaugh: 'Verty hummaugh!',
+	s_im_busy: ' I\'m busy. ',
+	s_go_away: ' Go away. ',
+	s_go_pester_mystic: 'Go pester the Mystic.',
+	s_enlighten_darm_presence: 'Enlighten Darm with your presence, not me.',
+	s_your_mumbling_distracts_me: 'Your mumbling distracts me.',
+	s_please_leave_go: 'Please leave and go.',
+	s_need_quill_sir: 'I need a quill, sir.',
+	s_can_you_direct_me: 'Can you direct me?',
+	s_what_for: 'What for?',
+	s_ver_bliney_hummaugh_gefen: 'Ver bliney hummaugh, gefen noy!',
+	s_darm_requests_it: 'Darm requests it.',
+	s_am_collecting_magic_fight: 'I am collecting magic to fight Malcolm.',
+	s_i_know_of_malcolm: 'I know of Malcolm.',
+	s_he_scares_the_birds: 'He scares the birds.',
+	s_one_songbird_left: 'There is one songbird left, but...',
+	s_hurt_cannot_sing: 'It is hurt and cannot sing.',
+	s_im_sorry_hear: 'I\'m sorry to hear that.',
+	s_still_need_quill: 'But I still need a quill.',
+	s_if_would_harvest_must: 'If you would harvest, you must sow!',
+	s_hummaugh_bliny_verty: 'Hummaugh, bliny verty!',
+	s_these_new_shoes: 'Are these my new shoes?',
+	s_excuse_me: 'Excuse me.',
+	s_hummaugh_harvest_flibbin: 'Hummaugh harvest!  Flibbin so!',
+	s_cant_see_im_trying: 'Can\'t you see I\'m trying to rest?',
+	s_tried_carve_name: 'I tried to carve my name on this...',
+	s_nolby_been_here_forever: '...but Nolby has been here forever.',
+	s_do_birds_need_baths: 'Why do birds need baths?',
+	s_ive_never_seen_muddy: 'I\'ve never seen a muddy bird.',
+	s_cheep_cheep: 'Cheep Cheep',
+	s_bird_always_here: 'Is that bird ALWAYS here?',
+	s_title: 'The oldest tree in Kyrandia',
+	s_id_love_sit_down: 'I\'d love to sit down...',
+	s_hes_taking_whole_bench: '...but he\'s taking up the whole bench!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_51
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+call(2, call_54)
+call_11(0x01, 0x00, 0x77, 0x7d)
+call_65(0x01, 0x03, 0x07, 0x00)
+call_5(u16(0x009a))
+speak(0xfe, 0x09, s_hummaugh_brinny_wella)
+speak(0xfe, 0x09, s_hummaugh_hummaugh)
+call_33(0x01)
+speak(0xfe, 0x00, s_good_morning_nolby)
+call_33(0x01)
+speak(0xfe, 0x09, s_gefn_ony_mummel)
+speak(0xfe, 0x09, s_verty_hummaugh)
+speak(0xfe, 0x09, s_im_busy)
+speak(0xfe, 0x09, s_go_away)
+call_33(0x02)
+call_4(0x5b)
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	speak(0xfe, 0x09, s_go_pester_mystic)
+	return call_55()
+
+call_4(0x0a)
+instr_2(2, 0x00)
+if cond:
+	speak(0xfe, 0x09, s_enlighten_darm_presence)
+	return call_55()
+
+speak(0xfe, 0x09, s_your_mumbling_distracts_me)
+speak(0xfe, 0x09, s_please_leave_go)
+speak(0xfe, 0x00, s_need_quill_sir)
+call_33(0x01)
+speak(0xfe, 0x00, s_can_you_direct_me)
+call_33(0x01)
+speak(0xfe, 0x09, s_what_for)
+speak(0xfe, 0x09, s_ver_bliney_hummaugh_gefen)
+speak(0xfe, 0x00, s_darm_requests_it)
+call_33(0x01)
+speak(0xfe, 0x00, s_am_collecting_magic_fight)
+call_33(0x01)
+speak(0xfe, 0x09, s_i_know_of_malcolm)
+speak(0xfe, 0x09, s_he_scares_the_birds)
+call_33(0x01)
+speak(0xfe, 0x09, s_one_songbird_left)
+speak(0xfe, 0x09, s_hurt_cannot_sing)
+speak(0xfe, 0x00, s_im_sorry_hear)
+speak(0xfe, 0x00, s_still_need_quill)
+call_33(0x01)
+speak(0xfe, 0x09, s_if_would_harvest_must)
+call_33(0x01)
+speak(0xfe, 0x09, s_hummaugh_bliny_verty)
+return call_55()
+
+label global_0
+call(2, call_18)
+instr_2(2, 0x00)
+push(2, 0x3c)
+binary(2, 0x0b)
+push(2, 0x01)
+binary(2, 0x08)
+push(2, 0x01)
+binary(2, 0x0e)
+instr_9(2, 0x0f)
+push(2, 0x00)
+instr_9(2, 0x10)
+push(2, 0x00)
+instr_9(2, 0x11)
+instr_5(2, 0x0f)
+if cond:
+	call_16(0x02)
+
+else:
+	call_17(0x02)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x26, 0x37, 0x4d, u16(0x008a))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x11)
+	unary(2, 0x00)
+	if cond:
+		call_24(0x01, 0x01)
+		push(2, 0x01)
+		instr_9(2, 0x11)
+		call_24(0x01, 0x0e)
+
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x03)
+	if cond:
+		return speak(0xfe, 0x09, s_these_new_shoes)
+
+	call_4(u16(0x008c))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		instr_5(2, 0x04)
+		push(2, 0xff)
+		binary(2, 0x02)
+		if cond:
+			func_28()
+			func_74()
+			call_4(0x5b)
+			instr_2(2, 0x00)
+			if cond:
+				call_5(u16(0x008c))
+
+			return acc  # acc = call_5(u16(0x008c))
+
+		return acc
+
+	call_4(0x4e)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		instr_5(2, 0x04)
+		push(2, 0xff)
+		binary(2, 0x02)
+		if cond:
+			func_28()
+			speak(0xfe, 0x00, s_excuse_me)
+			return speak(0xfe, 0x09, s_hummaugh_harvest_flibbin)
+
+		return acc  # acc = speak(0xfe, 0x09, 0x1b)
+
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	if cond:
+		func_28()
+		return speak(0xfe, 0x09, s_cant_see_im_trying)
+
+	return acc  # acc = speak(0xfe, 0x09, 0x1c)
+
+func_0(0x46, 0x61, 0x09, 0x6e)
+instr_2(2, 0x00)
+func_0(0x20, 0x20, 0x4d, 0x6b)
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x19, 0x1b, 0x4d, u16(0x00c0))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_450)
+	func_28()
+	speak(0xfe, 0x00, s_tried_carve_name)
+	return speak(0xfe, 0x00, s_nolby_been_here_forever)
+
+label label_450
+func_0(0x18, 0x13, 0x64, 0x32)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x0f)
+	ifnot(1, label_512)
+	func_28()
+	call_4(0x5b)
+	instr_2(2, 0x00)
+	call_4(0x5c)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	binary(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_do_birds_need_baths)
+		speak(0xfe, 0x00, s_ive_never_seen_muddy)
+
+	else:
+		instr_5(2, 0x10)
+		if cond:
+			tell(0x06, 0x66, 0x44, s_cheep_cheep)
+			call_33(0x01)
+			call(2, call_53)
+
+		else:
+			push(2, 0x01)
+			instr_9(2, 0x10)
+			speak(0xfe, 0x00, s_bird_always_here)
+
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc
+
+label label_512
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x0b, 0x21, 0x70, 0x1d)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	ifnot(1, label_543)
+	func_28()
+	call_23(0x1b)
+	return call_111(0x00, var(0x04))
+
+label label_543
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x23)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x23)
+return acc  # acc = title(u16(0x00b3), 0x23)
+
+label global_3
+instr_13(2, 0x00)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x008d))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	func_51(0x5c, u16(0x00aa))
+	speak(0xfe, 0x00, s_id_love_sit_down)
+	speak(0xfe, 0x00, s_hes_taking_whole_bench)
+	call_5(u16(0x008d))
+	push(2, 0x01)
+	instr_9(2, 0x03)
+	return acc  # acc = call_5(u16(0x008d))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+instr_5(2, 0x11)
+if cond:
+	call_24(0x01, 0x01)
+	call_150(0x02)
+	call_24(0x01, 0x0b)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

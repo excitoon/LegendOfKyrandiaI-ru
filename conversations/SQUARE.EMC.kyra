@@ -1,0 +1,153 @@
+# `SQUARE.EMC`.
+
+strings = {
+	s_emerald_really_wedged: 'That emerald is really wedged in there.',
+	s_youd_think_thered_some: 'You\'d think there\'d be some birds on this.',
+	s_looks_like_old_mystic: 'This looks like an old mystic.',
+	s_doesnt_look_like_malcolm: 'Doesn\'t look like Malcolm is bothering the Kyrandian Garden Club.',
+	s_title: 'A large statue',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(0x6a)
+instr_2(2, 0x00)
+if cond:
+	call_3(0x02, 0x00, 0x4c, u16(0x0097), 0x00)
+
+push(2, 0x00)
+instr_9(2, 0x0f)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(0x09, 0x08), add(0x10, 0x08), sub(0x4c, 0x04), sub(u16(0x0097), 0x04))
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	return speak(0xfe, 0x00, s_emerald_really_wedged)
+
+func_0(add(sub(0x65, 0x08), 0x01), add(sub(u16(0x00b4), 0x7d), 0x01), 0x08, 0x7d)
+instr_2(2, 0x00)
+if cond:
+	func_28()
+	instr_5(2, 0x0f)
+	push(2, 0x01)
+	binary(2, 0x08)
+	instr_9(2, 0x0f)
+	instr_5(2, 0x0f)
+	push(2, 0x01)
+	binary(2, 0x0e)
+	if cond:
+		speak(0xfe, 0x00, s_youd_think_thered_some)
+
+	else:
+		speak(0xfe, 0x00, s_looks_like_old_mystic)
+
+	return acc  # acc = speak(...)
+
+func_0(0x24, 0x4c, 0x53, 0x78)
+instr_2(2, 0x00)
+func_0(0x14, 0x6d, 0x5b, 0x67)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	func_28()
+	return speak(0xfe, 0x00, s_doesnt_look_like_malcolm)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x04)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x04)
+return acc  # acc = title(u16(0x00b3), 0x04)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

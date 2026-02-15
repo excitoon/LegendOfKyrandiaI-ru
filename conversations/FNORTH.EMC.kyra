@@ -1,0 +1,145 @@
+# `FNORTH.EMC`.
+
+strings = {
+	s_title: 'Dark forest',
+	s_over_here_slow_poke: 'Over here, slow-poke!',
+	s_im_not_chasing_you: 'I\'m NOT chasing you!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x0a)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_4(0x41)
+	instr_2(2, 0x00)
+	call_4(0x43)
+	instr_2(2, 0x00)
+	binary(2, 0x00)
+	ifnot(1, label_103)
+	call_73(0x29, 0x05, 0x76, u16(0x00ca), add(0x00, 0x0a), 0x01)
+
+label label_103
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x00)
+return acc  # acc = title(u16(0x00b3), 0x00)
+
+label global_3
+instr_13(2, 0x01)
+call_90(0x00)
+instr_2(2, 0x00)
+instr_10(2, 0x01)
+instr_5(2, 0x00)
+push(2, 0x00)
+push(2, 0x0a)
+binary(2, 0x08)
+binary(2, 0x02)
+if cond:
+	call_4(0x41)
+	instr_2(2, 0x00)
+	call_4(0x43)
+	instr_2(2, 0x00)
+	binary(2, 0x00)
+	ifnot(1, label_176)
+	call_65(0x01, 0x03, 0x07, 0x00)
+	speak(0xfe, 0x01, s_over_here_slow_poke)
+	call_81(0x76, add(u16(0x0140), 0x10), 0x01)
+	call_6(0x43)
+	call_5(0x44)
+	speak(0xfe, 0x00, s_im_not_chasing_you)
+
+label label_176
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x01
+return acc
+leave 0x01
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

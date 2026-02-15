@@ -1,0 +1,242 @@
+# `DARMS.EMC`.
+
+strings = {
+	s_first_time_ive_ever: 'This is the first time I\'ve ever seen Darm standing up.',
+	s_didnt_get_brandywine_too: 'He didn\'t get Brandywine too, did he?',
+	s_it_looks_so_comfortable: 'It looks SO comfortable.',
+	s_doesnt_look_like_darm: 'It doesn\'t look like Darm had many things.',
+	s_i_have_nothing_to: 'I have nothing to light this with.',
+	s_darms_unintelligible_notes: 'Darm\'s unintelligible notes.',
+	s_everything_looks_dead_out: 'Everything looks dead out there.',
+	s_dont_time_sit_rest: 'I don\'t have time to sit and rest.',
+	s_title: 'A bedroom',
+	s_youre_the_mystic: 'You\'re the Mystic...',
+	s_ill_give_try: '...But I\'ll give it try...',
+	s_doesnt_go_royal_carriage: 'Doesn\'t this go on the Royal carriage?',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_51
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_40(u16(0x0100), u16(0x0088), u16(0x00c0), 0x48)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x2f, 0x18, 0x2f, u16(0x00d2))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_129)
+	func_28()
+	instr_5(2, 0x0f)
+	push(2, 0x00)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_first_time_ive_ever)
+		push(2, 0x01)
+		instr_9(2, 0x0f)
+
+	else:
+		speak(0xfe, 0x00, s_didnt_get_brandywine_too)
+		push(2, 0x00)
+		instr_9(2, 0x0f)
+
+	return acc  # acc = speak(...)
+
+label label_129
+func_0(0x48, 0x36, 0x1e, 0x56)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_152)
+	func_28()
+	return speak(0xfe, 0x00, s_it_looks_so_comfortable)
+
+label label_152
+func_0(0x41, 0x55, 0x08, u16(0x0091))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_176)
+	func_28()
+	return speak(0xfe, 0x00, s_doesnt_look_like_darm)
+
+label label_176
+func_0(0x19, 0x0f, 0x37, u16(0x0114))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_200)
+	func_28()
+	return speak(0xfe, 0x00, s_i_have_nothing_to)
+
+label label_200
+func_0(0x0b, 0x15, 0x51, u16(0x0113))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_224)
+	func_28()
+	return speak(0xfe, 0x00, s_darms_unintelligible_notes)
+
+label label_224
+func_0(0x4e, 0x15, 0x08, u16(0x0124))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_248)
+	func_28()
+	return speak(0xfe, 0x00, s_everything_looks_dead_out)
+
+label label_248
+func_0(0x14, 0x1a, 0x4b, 0x1b)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_271)
+	func_28()
+	return speak(0xfe, 0x00, s_dont_time_sit_rest)
+
+label label_271
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x08)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x08)
+return acc  # acc = title(u16(0x00b3), 0x08)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x06)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call(2, call_38)
+	func_51(0x59, u16(0x00e1))
+	speak(0xfe, 0x00, s_youre_the_mystic)
+	call_11(0x00, 0x00, 0x5f, u16(0x00c4))
+	func_51(0x59, u16(0x00e1))
+	speak(0xfe, 0x00, s_ill_give_try)
+	return call_148()
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+instr_5(2, 0x04)
+push(2, 0x14)
+binary(2, 0x02)
+call_4(0x10)
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	func_28()
+	call_149(0x01)
+	speak(0xfe, 0x00, s_doesnt_go_royal_carriage)
+	call_149(0x00)
+	return call_5(0x10)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

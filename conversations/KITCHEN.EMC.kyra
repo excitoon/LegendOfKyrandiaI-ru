@@ -1,0 +1,213 @@
+# `KITCHEN.EMC`.
+
+strings = {
+	s_this_is_a_fancy: 'This is a fancy poker!',
+	s_now_thats_a_knife: 'Now that\'s a knife!',
+	s_looks_like_theyre_filled: 'Look\'s like they\'re filled with dust.',
+	s_wouldnt_dare_drink_anything: 'I wouldn\'t dare drink anything from that!',
+	s_this_looks_vicious: 'This looks vicious!',
+	s_what_a_pig: 'What a pig!',
+	s_anything_in_here: 'Anything in here?',
+	s_title: 'A kitchen',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(u16(0x00da))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_3(0x02, 0x00, 0x30, u16(0x0118), 0x01)
+
+else:
+	call_3(0x02, 0x00, 0x30, u16(0x0118), 0x00)
+
+call_40(u16(0x0100), 0x60, u16(0x00eb), 0x44)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x1e, 0x10, 0x30, u16(0x0118))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_160)
+	call_4(u16(0x00da))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_160)
+	call_5(u16(0x00da))
+	func_28()
+	call_13(0x00, 0x30, u16(0x0118), 0x00)
+	call_14(0x68)
+	return speak(0xfe, 0x00, s_this_is_a_fancy)
+
+label label_160
+func_0(0x1a, 0x1e, 0x23, 0x3a)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_183)
+	func_28()
+	return speak(0xfe, 0x00, s_now_thats_a_knife)
+
+label label_183
+func_0(0x28, 0x3a, 0x50, 0x66)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_206)
+	func_28()
+	return speak(0xfe, 0x00, s_looks_like_theyre_filled)
+
+label label_206
+func_0(0x48, 0x20, 0x16, 0x08)
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_229)
+	func_28()
+	return speak(0xfe, 0x00, s_wouldnt_dare_drink_anything)
+
+label label_229
+func_0(0x20, 0x28, 0x30, 0x34)
+instr_2(2, 0x00)
+func_0(0x0e, 0x12, 0x23, 0x48)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_261)
+	func_28()
+	return speak(0xfe, 0x00, s_this_looks_vicious)
+
+label label_261
+func_0(0x31, 0x6e, 0x58, u16(0x00ca))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_285)
+	func_28()
+	return speak(0xfe, 0x00, s_what_a_pig)
+
+label label_285
+func_0(0x21, 0x28, 0x0f, u16(0x0081))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_309)
+	func_28()
+	return speak(0xfe, 0x00, s_anything_in_here)
+
+label label_309
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x07)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x07)
+return acc  # acc = title(u16(0x00b3), 0x07)
+
+label global_3
+instr_13(2, 0x00)
+call_65(0x01, 0xff, 0x07, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = call_65(0x01, 0xff, 0x07, 0x00)
+return acc  # acc = call_65(0x01, 0xff, 0x07, 0x00)
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

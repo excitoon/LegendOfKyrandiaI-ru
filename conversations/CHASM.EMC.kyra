@@ -1,0 +1,177 @@
+# `CHASM.EMC`.
+
+strings = {
+	s_must_way_get_across: 'There must be a way to get across.',
+	s_cant_get_across_present: 'I can\'t get across in my present form.',
+	s_cant_get_back_across: 'I can\'t get back across in my present form.',
+	s_title: 'The Chasm of Everfall',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+call_9(0x4a, u16(0x00c1), 0x49, u16(0x00a7))
+return call_9(0x64, u16(0x00a0), 0x63, 0x75)
+
+label func_90
+call_10(0x4a, u16(0x00c1), 0x49, u16(0x00a7))
+return call_10(0x64, u16(0x00a0), 0x63, 0x75)
+
+label global_0
+call_40(u16(0x0100), 0x6c, u16(0x0080), 0x36)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(0x08, u16(0x0140), 0x00, 0x00)
+instr_2(2, 0x00)
+func_0(0x47, 0x7f, 0x08, 0x72)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	call_4(0x71)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_206)
+	call_114(0x02)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		call_11(0x00, 0x00, 0x6c, u16(0x0088))
+		call_65(0x01, 0x03, 0x07, 0x00)
+		call_4(0x70)
+		instr_2(2, 0x00)
+		unary(2, 0x00)
+		if cond:
+			speak(0xfe, 0x00, s_must_way_get_across)
+
+		else:
+			speak(0xfe, 0x00, s_cant_get_across_present)
+
+		return acc  # acc = speak(...)
+
+	else:
+		func_74()
+		call_11(0x00, 0x00, 0x40, u16(0x00b8))
+		func_90()
+		call_5(0x70)
+		return call_5(0x71)
+
+label label_206
+func_0(0x08, u16(0x0140), u16(0x0088), 0x00)
+instr_2(2, 0x00)
+func_0(0x2b, u16(0x0080), 0x5e, 0x50)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	call_4(0x71)
+	instr_2(2, 0x00)
+	ifnot(1, label_276)
+	call_114(0x02)
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		call_11(0x00, 0x00, 0x40, u16(0x00a4))
+		call_65(0x01, 0x05, 0x07, 0x00)
+		return speak(0xfe, 0x00, s_cant_get_back_across)
+
+	else:
+		func_74()
+		call_11(0x00, 0x00, 0x6c, u16(0x0088))
+		func_90()
+		return call_6(0x71)
+
+label label_276
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x03)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+return acc  # acc = title(u16(0x00b3), 0x03)
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

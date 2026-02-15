@@ -1,0 +1,151 @@
+# `UPSTAIR.EMC`.
+
+strings = {
+	s_doesnt_look_like_fun: 'That doesn\'t look like fun!',
+	s_title: 'A grand balcony',
+	s_gasp: ' -GASP-  ',
+	s_wheeze: '     -WHEEZE-',
+	s_very_big_stairs: 'Very big stairs!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label global_0
+call_4(u16(0x00dd))
+instr_2(2, 0x00)
+if cond:
+	call_3(0x02, 0x00, 0x33, u16(0x0087), 0x23)
+
+else:
+	call_3(0x02, 0x00, 0x33, u16(0x0087), 0x24)
+
+return 0x00
+return acc
+
+label global_1
+instr_13(2, 0x00)
+func_0(0x21, 0x22, 0x33, 0x4f)
+instr_2(2, 0x00)
+func_0(0x21, 0x20, 0x33, u16(0x00ef))
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_136)
+	func_28()
+	return speak(0xfe, 0x00, s_doesnt_look_like_fun)
+
+label label_136
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x01)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x01)
+return acc  # acc = title(u16(0x00b3), 0x01)
+
+label global_3
+instr_13(2, 0x00)
+call_65(0x01, 0xff, 0x07, 0x00)
+call_4(u16(0x00d7))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	speak(0xfe, 0x00, s_gasp)
+	speak(0xfe, 0x00, s_wheeze)
+	speak(0xfe, 0x00, s_very_big_stairs)
+	call_5(u16(0x00d7))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+call_90(0x00)
+instr_2(2, 0x00)
+push(2, 0x04)
+binary(2, 0x02)
+if cond:
+	call(2, call_38)
+	call_5(u16(0x00d8))
+	call_46(0xff, 0xff)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

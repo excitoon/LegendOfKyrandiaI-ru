@@ -1,0 +1,390 @@
+# `LEPHOLE.EMC`.
+
+strings = {
+	s_i_told_you: '  I told you...  ',
+	s_bring_something_good_ill: 'Bring me something good and I\'ll trade for the chalice.',
+	s_fine_ill_play_little: 'Fine, I\'ll play your little game.',
+	s_how_about_big_juicy: 'How about a big, juicy apple?',
+	s_now_sounds_good: 'Now that sounds GOOD!',
+	s_im_tall_enough_pick: 'I\'m not tall enough to pick apples!',
+	s_well_did_hide_chalice: 'Well, where did you hide my chalice?',
+	s_hid_chalice_outside_big: 'I hid MY chalice outside, you big oaf.',
+	s_go_outside_take_look: 'Go outside and take a look.',
+	s_how_about_blueberry: 'How about a blueberry?',
+	s_blueberries_okay_eat_them: 'Blueberries are okay, but I eat them all the time.',
+	s_since_im_small_theyre: 'Since I\'m so small, they\'re very easy to pick.',
+	s_how_about_this: 'How about this?',
+	s_thats_obviously_a_fake: 'That\'s obviously a fake...',
+	s_too_big_real: '...too big to be real.',
+	s_how_about_this_2: ' How about this? ',
+	s_said_want_something_good: 'No, I said I want something good.',
+	s_dont_need_anything_else: 'I don\'t need anything else from you.',
+	s_go_outside_look_chalice: 'Go outside and look for the chalice.',
+	s_youll_find_it: 'You\'ll find it.',
+	s_no_forget_it: 'No, forget it...',
+	s_dont_want_back: 'I don\'t want it back.',
+	s_just_take_go: 'Just take it and go.',
+	s_dont_need_anything_else_2: 'I don\'t need anything else from you...',
+	s_ive_given_chalice: 'I\'ve given you my chalice...',
+	s_only_prize_posession: 'My only prize posession...',
+	s_just_go_now: '  Just go now.  ',
+	s027: 'JUMP.WSA',
+	s_ever_thought_putting_some: 'Ever thought of putting in some stairs?',
+	s029: 'LEPCLIMB.WSA',
+	s_title: 'Inside a tiny dwelling',
+	s031: 'LEPHOLE.WSA',
+	s_you_have_my_chalice: 'You have my chalice!',
+	s_i_have_my_chalice: 'I have MY chalice.',
+	s_no_its_mine: 'No, it\'s mine!',
+	s_yes_its_mine: 'Yes, it\'s MINE.',
+	s_why_would_you_want: 'Why would you want it?',
+	s_would_make_other_furnishings: 'It would make your other furnishings look bad by comparison.',
+	s_by_the_way_where: 'By the way, where is my chalice?',
+	s_hidden_very_safe_place: 'I have hidden it in a very safe place.',
+	s_give_something_good_ill: 'Give me something good and I\'ll give it to you.',
+	s_looks_like_whoever_lives: 'Looks like whoever lives here is not home.',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+call_4(u16(0x00bc))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	return acc  # acc = call_4(...)
+
+func_28()
+call_4(u16(0x00b9))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x0a, s_i_told_you)
+		speak(0xfe, 0x0a, s_bring_something_good_ill)
+		call_33(0x01)
+		return speak(0xfe, 0x00, s_fine_ill_play_little)
+
+	instr_5(2, 0x04)
+	push(2, 0x26)
+	binary(2, 0x02)
+	if cond:
+		call(2, call_54)
+		speak(0xfe, 0x00, s_how_about_big_juicy)
+		call_33(0x01)
+		call(2, call_20)
+		speak(0xfe, 0x0a, s_now_sounds_good)
+		speak(0xfe, 0x0a, s_im_tall_enough_pick)
+		call_33(0x02)
+		speak(0xfe, 0x00, s_well_did_hide_chalice)
+		call_33(0x01)
+		speak(0xfe, 0x0a, s_hid_chalice_outside_big)
+		speak(0xfe, 0x0a, s_go_outside_take_look)
+		call(2, call_55)
+		call_71(add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x0a), 0x5a, u16(0x0122), 0x18)
+		call_5(u16(0x00b9))
+		call_6(u16(0x00b8))
+		return call_5(u16(0x00ba))
+
+	instr_5(2, 0x04)
+	push(2, 0x28)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x00, s_how_about_blueberry)
+		call_33(0x01)
+		speak(0xfe, 0x0a, s_blueberries_okay_eat_them)
+		return speak(0xfe, 0x0a, s_since_im_small_theyre)
+
+	instr_5(2, 0x04)
+	push(2, 0x00)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x0f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_how_about_this)
+		call_33(0x01)
+		speak(0xfe, 0x0a, s_thats_obviously_a_fake)
+		return speak(0xfe, 0x0a, s_too_big_real)
+
+	speak(0xfe, 0x00, s_how_about_this_2)
+	call_33(0x01)
+	return speak(0xfe, 0x0a, s_said_want_something_good)
+
+call_4(u16(0x00ba))
+instr_2(2, 0x00)
+call_4(u16(0x00bb))
+instr_2(2, 0x00)
+unary(2, 0x00)
+binary(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x03)
+	if cond:
+		speak(0xfe, 0x0a, s_dont_need_anything_else)
+
+	speak(0xfe, 0x0a, s_go_outside_look_chalice)
+	return speak(0xfe, 0x0a, s_youll_find_it)
+
+call_4(u16(0x00bb))
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0x18)
+	binary(2, 0x02)
+	if cond:
+		speak(0xfe, 0x0a, s_no_forget_it)
+		speak(0xfe, 0x0a, s_dont_want_back)
+		return speak(0xfe, 0x0a, s_just_take_go)
+
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x03)
+	if cond:
+		speak(0xfe, 0x0a, s_dont_need_anything_else_2)
+
+	speak(0xfe, 0x0a, s_ive_given_chalice)
+	speak(0xfe, 0x0a, s_only_prize_posession)
+	return speak(0xfe, 0x0a, s_just_go_now)
+
+return acc  # acc = speak(0xfe, 0x0a, 0x1a)
+
+label global_0
+call_143(0x5b, 0x48, 0x08, u16(0x00f0))
+call_143(0x61, 0x30, 0x08, u16(0x0108))
+call_143(0x38, 0x40, 0x50, 0x30)
+call_4(u16(0x00b4))
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_41(0x01, 0xff, 0x00, 0x1b)
+	call_63(0x00, 0x00, 0x08, u16(0x00f0), 0x01)
+	call_42(0x00)
+
+call_4(u16(0x00bc))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	call_17(0x01)
+	call_17(0x06)
+
+call_123(0x00, 0x55, 0x2c, 0x08, u16(0x010b))
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x01)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(sub(0x70, 0x55), 0x01), add(sub(0x4b, 0x37), 0x01), 0x55, 0x37)
+instr_2(2, 0x00)
+if cond:
+	instr_2(2, 0x01)
+	jmp(4, func_74)
+	leave 0x01
+	return acc
+
+func_0(0x55, 0x2c, 0x08, u16(0x010b))
+instr_2(2, 0x00)
+if cond:
+	call_11(0x01, 0x01, 0x64, u16(0x0112))
+	instr_2(2, 0x00)
+	instr_10(2, 0x01)
+	instr_6(2, 0x01)
+	if cond:
+		leave 0x01
+		return acc
+
+	call(2, call_54)
+	call(2, call_38)
+	call_65(0x01, 0x05, 0x07, 0x00)
+	call_4(u16(0x00b7))
+	instr_2(2, 0x00)
+	call_4(u16(0x00bc))
+	instr_2(2, 0x00)
+	binary(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_ever_thought_putting_some)
+
+	call_24(0x01, 0x01)
+	call_41(0x00, 0x00, 0x00, 0x1d)
+	call_43(0x01, 0x00, 0x08, 0x08, u16(0x0108))
+	call_42(0x00)
+	call_5(u16(0x00b5))
+	call_46(0xff, 0xff)
+	call(2, call_55)
+	call_45(0x00, 0x00, 0x00, 0xff, add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x0a))
+	leave 0x01
+	return acc
+
+push(2, 0x00)
+instr_9(2, 0x03)
+leave 0x01
+return acc
+leave 0x01
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x1e)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_4(u16(0x00b4))
+instr_2(2, 0x00)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	call_6(u16(0x00b4))
+	call_24(0x01, 0x1b)
+	call_4(u16(0x00b7))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	call_4(u16(0x00bc))
+	instr_2(2, 0x00)
+	binary(2, 0x00)
+	if cond:
+		call_66(0x01)
+		call_66(0x06)
+		call_41(0x01, 0xff, 0x01, 0x1f)
+		call_64(0x01, 0x01, 0x09, 0x50, 0x30, sub(0x07, 0x01), sub(0x01, 0x01))
+		call_64(0x02, 0x01, 0x09, 0x50, 0x30, sub(0x0e, 0x01), sub(0x08, 0x01))
+		call_64(0x01, 0x01, 0x09, 0x50, 0x30, sub(0x01, 0x01), sub(0x07, 0x01))
+
+	call_41(0x01, 0x00, 0x00, 0x1b)
+	call_64(0x01, 0x00, 0x06, 0x08, u16(0x00f0), 0x13, 0x01)
+	call_49(0x00)
+	call_63(0x00, 0x00, 0x08, u16(0x00f0), 0x00)
+	call_42(0x00)
+	call(2, call_86)
+	call_49(0x01)
+	call_48(0x00, 0x05, 0x64, u16(0x0112))
+	call_4(u16(0x00b7))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	call_4(u16(0x00bc))
+	instr_2(2, 0x00)
+	binary(2, 0x00)
+	if cond:
+		call_64(0x01, 0x01, 0x06, 0x50, 0x30, sub(0x12, 0x01), sub(0x0f, 0x01))
+		call_64(0x01, 0x01, 0x06, 0x50, 0x30, sub(0x01, 0x01), sub(0x01, 0x01))
+		call_42(0x01)
+		call_37(0x01)
+		call_37(0x06)
+		speak(0xfe, 0x00, s_you_have_my_chalice)
+		speak(0xfe, 0x0a, s_i_have_my_chalice)
+		speak(0xfe, 0x00, s_no_its_mine)
+		speak(0xfe, 0x0a, s_yes_its_mine)
+		call_11(0x01, 0x00, 0x70, 0x7c)
+		speak(0xfe, 0x00, s_why_would_you_want)
+		call_58(0x07, 0x03, 0x00)
+		speak(0xfe, 0x00, s_would_make_other_furnishings)
+		call_58(0x07, 0x05, 0x00)
+		call_33(0x02)
+		speak(0xfe, 0x00, s_by_the_way_where)
+		speak(0xfe, 0x0a, s_hidden_very_safe_place)
+		speak(0xfe, 0x0a, s_give_something_good_ill)
+		call_71(add(add(add(add(add(0x00, 0x10), 0x01), 0x13), 0x01), 0x41), u16(0x0086), u16(0x00a0), 0x26)
+		call_5(u16(0x00b8))
+		call_5(u16(0x00b7))
+
+	return acc  # acc = call_5(u16(0x00b7))
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_3
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+call_5(u16(0x00b0))
+call_4(u16(0x00bc))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	return speak(0xfe, 0x00, s_looks_like_whoever_lives)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc

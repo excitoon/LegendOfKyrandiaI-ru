@@ -1,0 +1,294 @@
+# `SORROW.EMC`.
+
+strings = {
+	s_these_tears_coming: 'Where are these tears coming from?',
+	s_whole_pool_filled_tears: 'Is this whole pool filled with tears?',
+	s_sort_disgusting_actually: 'Sort of disgusting, actually.',
+	s_wouldnt_drink_bet: 'I wouldn\'t drink it on a bet.',
+	s_bet_can_catch_teardrop: 'I bet I can catch a teardrop!',
+	s_can_catch_another_one: 'Can I catch another one?',
+	s006: 'RAINDROP.WSA',
+	s_got_one: 'Got one!',
+	s_yikes: '   Yikes!   ',
+	s_water_must_salty: 'That water must be salty!',
+	s_nothing_sinks: 'Nothing sinks!',
+	s_title: 'Pool of Sorrow',
+	s_youre_following_pretty_close: 'You\'re following pretty close for someone who\'s not chasing me!',
+}
+
+globals = [global_0, global_1, global_2, global_3, global_4, global_5, global_6]
+
+label func_0
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+binary(2, 0x07)
+instr_5(2, 0x01)
+instr_7(2, 0x01)
+instr_7(2, 0x03)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+binary(2, 0x07)
+binary(2, 0x00)
+instr_5(2, 0x02)
+instr_7(2, 0x02)
+instr_7(2, 0x04)
+binary(2, 0x08)
+binary(2, 0x05)
+binary(2, 0x00)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label func_28
+instr_5(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+instr_7(2, 0x01)
+call_56(0x00)
+instr_2(2, 0x00)
+binary(2, 0x05)
+if cond:
+	call_58(0xff, 0x05, 0x00)
+
+else:
+	call_58(0xff, 0x03, 0x00)
+
+return 0x00
+return acc
+
+label func_74
+func_28()
+instr_5(2, 0x0f)
+push(2, 0x01)
+binary(2, 0x08)
+instr_9(2, 0x0f)
+instr_5(2, 0x0f)
+push(2, 0x01)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_these_tears_coming)
+
+instr_5(2, 0x0f)
+push(2, 0x02)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_whole_pool_filled_tears)
+
+instr_5(2, 0x0f)
+push(2, 0x03)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_sort_disgusting_actually)
+
+instr_5(2, 0x0f)
+push(2, 0x04)
+binary(2, 0x02)
+if cond:
+	speak(0xfe, 0x00, s_wouldnt_drink_bet)
+	push(2, 0x00)
+	instr_9(2, 0x0f)
+
+return acc  # acc = speak(0xfe, 0x00, 0x03)
+
+label func_123
+func_0(0x05, 0x30, 0x52, 0x7b)
+instr_2(2, 0x00)
+func_0(0x04, 0x51, 0x57, 0x6c)
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x07, u16(0x0097), 0x5b, 0x36)
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x08, u16(0x0093), 0x62, 0x42)
+instr_2(2, 0x00)
+binary(2, 0x01)
+func_0(0x09, 0x4d, 0x6a, 0x51)
+instr_2(2, 0x00)
+binary(2, 0x01)
+if cond:
+	return 0x01
+
+return 0x00
+return acc
+
+label global_0
+call_143(0x55, 0x30, 0x08, u16(0x00a8))
+call_4(u16(0x0084))
+instr_2(2, 0x00)
+unary(2, 0x00)
+if cond:
+	push(2, 0x01)
+	instr_9(2, 0x10)
+	call_24(0x01, 0x01)
+
+else:
+	push(2, 0x00)
+	instr_9(2, 0x10)
+
+call_4(0x41)
+instr_2(2, 0x00)
+call_4(0x44)
+instr_2(2, 0x00)
+binary(2, 0x00)
+if cond:
+	call_73(0x29, 0x05, 0x76, u16(0x010c), add(0x00, 0x08), 0x01)
+
+push(2, 0x00)
+instr_9(2, 0x0f)
+return 0x00
+return acc  # acc = 0x00
+
+label global_1
+instr_13(2, 0x00)
+push(2, 0x01)
+instr_9(2, 0x03)
+func_0(add(sub(0x74, 0x08), 0x01), add(sub(u16(0x00b8), 0x32), 0x01), 0x08, 0x32)
+instr_2(2, 0x00)
+if cond:
+	call_4(u16(0x0084))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_364)
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	ifnot(1, label_364)
+	call(2, call_54)
+	call(2, call_38)
+	call_4(u16(0x00ca))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	if cond:
+		speak(0xfe, 0x00, s_bet_can_catch_teardrop)
+
+	else:
+		speak(0xfe, 0x00, s_can_catch_another_one)
+
+	call_11(0x00, 0x00, 0x5c, u16(0x00cc))
+	call_65(0x01, 0x05, 0x07, 0x00)
+	call_41(0x01, 0x00, 0x00, 0x06)
+	call_64(0x01, 0x00, 0x07, 0x08, u16(0x00a8), 0x02, 0x00)
+	call_33(0x01)
+	call_64(0x01, 0x00, 0x07, 0x08, u16(0x00a8), 0x0e, 0x03)
+	call_64(0x01, 0x00, 0x07, 0x08, u16(0x00a8), 0x15, 0x13)
+	call_42(0x00)
+	call_14(0x34)
+	call(2, call_55)
+	call_121(0x46, u16(0x00cd))
+	speak(0xfe, 0x00, s_got_one)
+	call_5(u16(0x0084))
+	return call_5(u16(0x00ca))
+
+label label_364
+func_123()
+instr_2(2, 0x00)
+if cond:
+	instr_5(2, 0x04)
+	push(2, 0x4e)
+	binary(2, 0x07)
+	instr_5(2, 0x04)
+	push(2, 0x4f)
+	binary(2, 0x05)
+	binary(2, 0x00)
+	if cond:
+		call_23(0x1b)
+		return call_111(0x01, var(0x04))
+
+	instr_5(2, 0x04)
+	push(2, 0xff)
+	binary(2, 0x02)
+	if cond:
+		return func_74()
+
+	instr_5(2, 0x04)
+	push(2, 0x34)
+	binary(2, 0x02)
+	if cond:
+		call_72(var(0x02), var(0x01), var(0x04))
+		return call_6(u16(0x0084))
+
+	speak(0xfe, 0x00, s_yikes)
+	speak(0xfe, 0x00, s_water_must_salty)
+	return speak(0xfe, 0x00, s_nothing_sinks)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_2
+instr_13(2, 0x00)
+title(u16(0x00b3), 0x0b)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+return acc  # acc = title(u16(0x00b3), 0x0b)
+
+label global_3
+instr_13(2, 0x00)
+call_4(0x41)
+instr_2(2, 0x00)
+call_4(0x44)
+instr_2(2, 0x00)
+binary(2, 0x00)
+if cond:
+	call_65(0x01, 0x03, 0x07, 0x00)
+	speak(0xfe, 0x01, s_youre_following_pretty_close)
+	call_81(0x76, add(u16(0x0140), 0x10), 0x01)
+	call_6(0x44)
+	call_5(0x45)
+
+else:
+	call_65(0x01, 0xff, 0x07, 0x00)
+	call_4(u16(0x0084))
+	instr_2(2, 0x00)
+	unary(2, 0x00)
+	ifnot(1, label_495)
+	call_24(0x01, 0x07)
+
+label label_495
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_4
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_5
+instr_13(2, 0x00)
+instr_5(2, 0x10)
+if cond:
+	call_24(0x01, 0x01)
+	call_150(0x02)
+	call_24(0x01, 0x02)
+
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
+
+label global_6
+instr_13(2, 0x00)
+push(2, 0x00)
+instr_9(2, 0x03)
+return acc
+return acc
